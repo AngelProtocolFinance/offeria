@@ -1,0 +1,21 @@
+{
+  "name": "npos-search-index",
+  "mappings": {
+    "dynamic": false,
+    "fields": {
+      "name": { "type": "string", "analyzer": "lucene.standard" },
+      "tagline": { "type": "string", "analyzer": "lucene.standard" },
+      "registration_number": { "type": "string", "analyzer": "lucene.keyword" },
+      "env": { "type": "token" },
+      "published": { "type": "boolean" },
+      "claimed": { "type": "boolean" },
+      "hq_country": { "type": "token" },
+      "active_in_countries": { "type": "token" },
+      "endow_designation": { "type": "token" },
+      "kyc_donors_only": { "type": "boolean" },
+      "fund_opt_in": { "type": "boolean" },
+      "sdgs": { "type": "number" },
+      "id": { "type": "number" }
+    }
+  }
+}

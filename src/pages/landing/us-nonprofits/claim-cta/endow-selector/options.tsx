@@ -1,0 +1,74 @@
+import type { INposPage } from "@/endowment";
+import { ComboboxOption, ComboboxOptions } from "@headlessui/react";
+import use_swr from "swr/immutable";
+import { Image } from "#/components/image";
+import { QueryLoader } from "#/components/query-loader";
+import { use_debouncer } from "#/hooks/use-debouncer";
+
+type Props = {
+  searchText: string;
+};
+
+const fields = ["id", "name", "card_img", "registration_number"] as const;
+type Field = (typeof fields)[number];
+
+const fetcher = async (path: string) =>
+  fetch(path).then<INposPage<Field>>((res) => res.json());
+
+export function Options({ searchText }: Props) {
+  const [debouncedSearchText, isDebouncing] = use_debouncer(searchText, 200);
+
+  const params = {
+    query: debouncedSearchText,
+    page: "1",
+    claimed: "false",
+    fields: fields.join(","),
+  };
+  const endows = use_swr(
+    `/api/npos?${new URLSearchParams(params).toString()}`,
+    fetcher
+  );
+
+  return (
+    <ComboboxOptions
+      anchor="bottom"
+      className="w-[var(--input-width)] mt-2 z-10 bg-white dark:bg-blue-d6 shadow-lg rounded-lg overflow-y-scroll max-h-24"
+    >
+      <QueryLoader
+        queryState={{
+          is_loading: endows.isLoading || isDebouncing,
+          is_fetching: endows.isValidating,
+          is_error: !!endows.error,
+          data: endows.data?.items,
+        }}
+        messages={{
+          loading: searchText ? "searching..." : "loading nonprofit...",
+          error: "failed to get nonprofits",
+          empty: searchText
+            ? `${searchText} not found or already claimed`
+            : "not found or already claimed",
+        }}
+        classes={{ container: "w-full p-2 text-gray" }}
+      >
+        {(endowments) => (
+          <>
+            {endowments.map((endowment) => (
+              <ComboboxOption
+                className="data-[selected]:bg-blue-l2 hover:bg-blue-l2 cursor-pointer flex gap-2 p-2"
+                key={endowment.name}
+                value={endowment}
+              >
+                <Image
+                  src={endowment.card_img}
+                  width="10"
+                  className="rounded-sm"
+                />
+                <span>{endowment.name}</span>
+              </ComboboxOption>
+            ))}
+          </>
+        )}
+      </QueryLoader>
+    </ComboboxOptions>
+  );
+}

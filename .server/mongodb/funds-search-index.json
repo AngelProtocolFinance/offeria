@@ -1,0 +1,19 @@
+{
+  "name": "funds-search",
+  "mappings": {
+    "dynamic": false,
+    "fields": {
+      "name": { "type": "string", "analyzer": "lucene.standard" },
+      "description": { "type": "string", "analyzer": "lucene.standard" },
+      "creator_name": { "type": "string", "analyzer": "lucene.standard" },
+      "env": { "type": "token" },
+      "active": { "type": "boolean" },
+      "featured": { "type": "boolean" },
+      "verified": { "type": "boolean" },
+      "expiration": { "type": "number" },
+      "creator_id": { "type": "token" },
+      "members": { "type": "number" },
+      "id": { "type": "token" }
+    }
+  }
+}

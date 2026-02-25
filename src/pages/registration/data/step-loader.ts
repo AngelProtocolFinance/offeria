@@ -1,0 +1,53 @@
+import { regdb } from "$/tables/registrations";
+import { resp } from "@/helpers/https";
+import { Progress } from "@/reg/progress";
+import { reg_id } from "@/reg/schema";
+import {
+  type LoaderFunction,
+  type LoaderFunctionArgs,
+  redirect,
+} from "react-router";
+import { parse } from "valibot";
+import { cognito, to_auth } from "#/.server/auth";
+import { routes } from "../routes";
+import type { Reg$IdData } from "../types";
+
+export const reg_loader: LoaderFunction = async ({ params, request }) => {
+  const { user, headers } = await cognito.retrieve(request);
+  if (!user) return to_auth(request, headers);
+  const rid = parse(reg_id, params.regId);
+  const reg = await regdb.reg(rid);
+  if (!reg) return { status: 404 };
+  return {
+    user,
+    reg,
+  } satisfies Reg$IdData;
+};
+
+export const step_loader =
+  (this_step: Progress["step"]) =>
+  async ({ params, request }: LoaderFunctionArgs) => {
+    const { user, headers } = await cognito.retrieve(request);
+    if (!user) return to_auth(request, headers);
+    const rid = parse(reg_id, params.regId);
+
+    const reg = await regdb.reg(rid);
+    if (!reg) return resp.status(404);
+
+    const r = new Progress(reg);
+
+    if (reg.status === "02" && this_step !== 6) {
+      return redirect(`../${6}`);
+    }
+
+    if (reg.status === "03") {
+      const to = `../../${routes.success}?name=${reg.o_name}&id=${reg.status_approved_npo_id}`;
+      return redirect(to);
+    }
+
+    if (this_step > r.step) {
+      return redirect(`../${r.step}`);
+    }
+
+    return reg;
+  };

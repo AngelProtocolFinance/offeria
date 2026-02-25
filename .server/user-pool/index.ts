@@ -1,0 +1,239 @@
+import { domain } from "@/constants";
+import { cert_subdomain } from "../certs";
+import custom_msg_deps from "./custom-msg.deps.json";
+import post_confirm_deps from "./post-confirm.deps.json";
+
+const keys = {
+  user_pool: "usrpl",
+  identity_provider_google: "Google",
+  client: "usrpl-client",
+  domain: "usrpl-domain",
+  dns: "usrpl-dns",
+};
+
+interface IGoogle {
+  client_id: string;
+  client_secret: string;
+}
+
+interface IInput {
+  stage: TStage;
+  google: $util.Output<IGoogle>;
+  links?: $util.Input<any[]>;
+}
+
+const stage_config = {
+  default: {
+    callback_urls: ["http://localhost:4200/", `https://staging.${domain}/`],
+    logout_urls: ["http://localhost:4200/", `https://staging.${domain}/`],
+    domain: `auth-test.${domain}`,
+    dns_name: "auth-test",
+    deletion_protection: "INACTIVE",
+  },
+  production: {
+    callback_urls: ["http://localhost:4200/", `https://${domain}/`],
+    logout_urls: ["http://localhost:4200/", `https://${domain}/`],
+    domain: `auth.${domain}`,
+    dns_name: "auth",
+    deletion_protection: "INACTIVE",
+  },
+};
+
+const user_pool_schemas = [
+  {
+    name: "given_name",
+    attributeDataType: "String" as const,
+    required: true,
+    mutable: true,
+  },
+  {
+    name: "family_name",
+    attributeDataType: "String" as const,
+    required: true,
+    mutable: true,
+  },
+  { name: "currency", attributeDataType: "String" as const, mutable: true },
+  { name: "avatar", attributeDataType: "String" as const, mutable: true },
+  { name: "user-tyoe", attributeDataType: "String" as const, mutable: true },
+  { name: "referral_id", attributeDataType: "String" as const, mutable: true },
+  { name: "pay_id", attributeDataType: "String" as const, mutable: true },
+  { name: "pay_min", attributeDataType: "String" as const, mutable: true },
+  {
+    name: "stripe_customer_id",
+    attributeDataType: "String" as const,
+    mutable: true,
+  },
+];
+
+function create_user_pool(i: IInput, config: (typeof stage_config)["default"]) {
+  const post_confirm = new sst.aws.Function("usrpl-post-confirm-hndlr", {
+    handler: ".server/user-pool/post-confirm.handler",
+    runtime: "nodejs22.x",
+    link: i.links,
+    nodejs: { install: post_confirm_deps },
+  });
+
+  const pre_token = new sst.aws.Function("usrpl-pre-token-gen-hndlr", {
+    handler: ".server/user-pool/pre-token.handler",
+    runtime: "nodejs22.x",
+    link: i.links,
+  });
+
+  const custom_msg = new sst.aws.Function("usrpl-custom-msg-hndlr", {
+    handler: ".server/user-pool/custom-msg.handler",
+    runtime: "nodejs22.x",
+    nodejs: { install: custom_msg_deps },
+  });
+
+  let user_migration: sst.aws.Function | undefined;
+  if (i.stage === "production") {
+    user_migration = new sst.aws.Function("usrpl-user-migration-hndlr", {
+      handler: ".server/user-pool/user-migration.handler",
+      runtime: "nodejs22.x",
+    });
+  }
+
+  const s = new sst.aws.CognitoUserPool(keys.user_pool, {
+    usernames: ["email"],
+    triggers: {
+      customMessage: custom_msg.arn,
+      postConfirmation: post_confirm.arn,
+      preTokenGeneration: pre_token.arn,
+      userMigration: user_migration?.arn,
+    },
+    transform: {
+      userPool: (args, opts) => {
+        args.deletionProtection = config.deletion_protection;
+        args.emailConfiguration = {
+          sourceArn:
+            "arn:aws:ses:us-east-1:571372027840:identity/hi@better.giving",
+          emailSendingAccount: "DEVELOPER",
+          fromEmailAddress: "Better Giving <hi@better.giving>",
+        };
+        args.schemas = user_pool_schemas;
+        // aws provider spuriously diffs schemas on every deploy
+        opts.ignoreChanges = ["schemas"];
+      },
+    },
+  });
+
+  new aws.iam.RolePolicy("usrpl-post-confirm-policy", {
+    role: post_confirm.nodes.role.name,
+    policy: $jsonStringify({
+      Version: "2012-10-17",
+      Statement: [
+        {
+          Effect: "Allow",
+          Action: ["cognito-idp:AdminUpdateUserAttributes"],
+          Resource: s.arn,
+        },
+      ],
+    }),
+  });
+
+  if (user_migration) {
+    new aws.iam.RolePolicy("usrpl-user-migration-policy", {
+      role: user_migration.nodes.role.name,
+      policy: $jsonStringify({
+        Version: "2012-10-17",
+        Statement: [
+          {
+            Effect: "Allow",
+            Action: [
+              "cognito-idp:AdminInitiateAuth",
+              "cognito-idp:AdminGetUser",
+            ],
+            Resource:
+              "arn:aws:cognito-idp:us-east-1:571372027840:userpool/us-east-1_ukOlQeQIM",
+          },
+        ],
+      }),
+    });
+  }
+
+  const google_provider = s.addIdentityProvider(keys.identity_provider_google, {
+    type: "google",
+    details: {
+      authorize_scopes: "email profile",
+      client_id: i.google.apply((g) => g.client_id),
+      client_secret: i.google.apply((g) => g.client_secret),
+    },
+    attributes: {
+      email: "email",
+      family_name: "family_name",
+      given_name: "given_name",
+      username: "sub",
+    },
+  });
+
+  s.addClient(keys.client, {
+    providers: [google_provider.providerName],
+    callbackUrls: config.callback_urls,
+    transform: {
+      client: (args) => {
+        args.accessTokenValidity = 60;
+        args.idTokenValidity = 60;
+        args.refreshTokenValidity = 30;
+        args.tokenValidityUnits = {
+          accessToken: "minutes",
+          idToken: "minutes",
+          refreshToken: "days",
+        };
+        args.logoutUrls = config.logout_urls;
+        args.allowedOauthFlows = ["code"];
+        args.allowedOauthScopes = [
+          "aws.cognito.signin.user.admin",
+          "email",
+          "openid",
+          "profile",
+        ];
+        args.explicitAuthFlows = [
+          "ALLOW_CUSTOM_AUTH",
+          "ALLOW_REFRESH_TOKEN_AUTH",
+          "ALLOW_USER_PASSWORD_AUTH",
+          "ALLOW_USER_SRP_AUTH",
+        ];
+        args.preventUserExistenceErrors = "ENABLED";
+      },
+    },
+  });
+
+  new aws.cognito.UserGroup("usrpl-admin-group", {
+    userPoolId: s.id,
+    name: "ap-admin",
+  });
+
+  const usrpl_domain = new aws.cognito.UserPoolDomain(keys.domain, {
+    domain: config.domain,
+    userPoolId: s.id,
+    certificateArn: cert_subdomain,
+  });
+
+  const zone = cloudflare.getZoneOutput({
+    filter: { name: domain },
+  });
+
+  new cloudflare.DnsRecord(keys.dns, {
+    zoneId: zone.zoneId,
+    name: config.dns_name,
+    type: "CNAME",
+    content: usrpl_domain.cloudfrontDistribution,
+    ttl: 300,
+    proxied: false,
+  });
+
+  return s;
+}
+
+export const user_pool = (i: IInput) => {
+  if (i.stage === "default") {
+    return create_user_pool(i, stage_config.default);
+  }
+
+  if (i.stage === "production") {
+    return create_user_pool(i, stage_config.production);
+  }
+
+  // dev stages reference default pool
+  return sst.aws.CognitoUserPool.get(keys.user_pool, "us-east-1_6igeurHnN");
+};

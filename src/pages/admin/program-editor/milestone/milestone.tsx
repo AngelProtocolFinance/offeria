@@ -1,0 +1,160 @@
+import type { IMilestone, IMilestoneUpdate } from "@/endowment";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
+import { valibotResolver } from "@hookform/resolvers/valibot";
+import { useController, useForm } from "react-hook-form";
+import { useFetcher } from "react-router";
+import { Field, Form, Label, toYYYMMDD } from "#/components/form";
+import { DrawerIcon } from "#/components/icon";
+import { ImgEditor } from "#/components/img-editor";
+import { RichText } from "#/components/rich-text";
+import { MAX_CHARS, img_spec } from "../common";
+import { type FV, schema } from "./schema";
+
+type Props = IMilestone & { programId: string };
+export function Milestone(props: Props) {
+  const {
+    register,
+    handleSubmit,
+    formState: { isDirty, isSubmitting, errors },
+    control,
+    trigger,
+    resetField,
+  } = useForm<FV>({
+    values: {
+      date: toYYYMMDD(new Date(props.date)),
+      title: props.title,
+      media: props.media ?? "",
+      description: { value: props.description ?? "" },
+    },
+    resolver: valibotResolver(schema),
+  });
+
+  const { field: desc } = useController({ control, name: "description" });
+  const { field: media } = useController({ control, name: "media" });
+
+  const fetcher = useFetcher();
+
+  return (
+    <Disclosure
+      as="div"
+      className="border border-gray-l3 rounded-sm overflow-hidden"
+    >
+      <div className="relative py-3 px-4 text-center bg-blue-l5 dark:bg-blue-d7">
+        <span className="text-xl font-bold ">{props.title}</span>
+        <DisclosureButton className="absolute right-4 top-1/2 -translate-y-1/2">
+          {({ open }) => <DrawerIcon is_open={open} size={20} />}
+        </DisclosureButton>
+      </div>
+
+      <DisclosurePanel
+        as={Form}
+        className={({ open }) =>
+          `${
+            open ? "border-t border-gray-l3" : ""
+          } bg-white dark:bg-blue-d6 py-6 px-4 grid content-start gap-6`
+        }
+        disabled={isSubmitting}
+        onSubmit={handleSubmit((fv) => {
+          const update: IMilestoneUpdate = {
+            description: fv.description.value,
+            title: fv.title,
+            date: new Date(fv.date).toISOString(),
+            ...(fv.media && { media: fv.media }),
+          };
+          fetcher.submit(
+            { ...update, intent: "edit-milestone", "milestone-id": props.id },
+            {
+              encType: "application/json",
+              method: "POST",
+              action: ".",
+            }
+          );
+        })}
+      >
+        <Label className="-mb-4">Image of milestone</Label>
+        <ImgEditor
+          value={media.value}
+          on_change={(v) => {
+            media.onChange(v);
+            trigger("media");
+          }}
+          on_undo={(e) => {
+            e.stopPropagation();
+            resetField("media");
+          }}
+          spec={img_spec([4, 1])}
+          classes={{
+            container: "mb-4",
+            dropzone: "w-full @md:aspect-4/1 h-36 @md:h-auto",
+          }}
+          error={errors.media?.message}
+        />
+        <Field
+          {...register("date")}
+          type="date"
+          classes={{ input: "date-input uppercase" }}
+          label="Date of milestone"
+          placeholder="e.g. 2014-09-23"
+          required
+          error={errors.date?.message}
+        />
+        <Field
+          {...register("title")}
+          label="Title of milestone"
+          placeholder="e.g. John"
+          required
+          error={errors.title?.message}
+        />
+        <Label className="-mb-4">Description of milestone</Label>
+        <RichText
+          content={desc.value}
+          onChange={desc.onChange}
+          ref={desc.ref}
+          charLimit={MAX_CHARS}
+          classes={{
+            field:
+              "rich-text-toolbar border border-gray-l3 text-sm grid grid-rows-[auto_1fr] rounded-sm bg-gray-l6 dark:bg-blue-d5 p-3 min-h-[15rem]",
+            counter: "text-gray dark:text-gray",
+          }}
+          error={
+            errors.description?.value?.message ||
+            errors.description?.length?.message
+          }
+        />
+        <div className="mt-2 flex gap-2 flex-col @lg:flex-row justify-between">
+          <button
+            disabled={fetcher.state !== "idle"}
+            type="button"
+            className="btn btn-red py-2 text-sm"
+            onClick={() => {
+              if (!window.confirm("Delete milestone?")) return;
+              fetcher.submit(
+                { intent: "delete-milestone", "milestone-id": props.id },
+                { method: "POST", encType: "application/json" }
+              );
+            }}
+          >
+            {fetcher.formData?.get("intent") === "delete-milestone" &&
+            fetcher.state !== "idle"
+              ? "Deleting.."
+              : "Delete"}{" "}
+            milestone
+          </button>
+          <button
+            disabled={
+              !isDirty || fetcher.state !== "idle" || media.value === "loading"
+            }
+            type="submit"
+            className="btn btn-blue py-2 text-sm"
+          >
+            Save changes
+          </button>
+        </div>
+      </DisclosurePanel>
+    </Disclosure>
+  );
+}

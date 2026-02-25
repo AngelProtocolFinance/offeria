@@ -1,0 +1,12 @@
+[
+  "@aws-sdk/client-dynamodb",
+  "@aws-sdk/lib-dynamodb",
+  "date-fns",
+  "immer",
+  "ksuid",
+  "nanoid",
+  "stripe",
+  "type-fest",
+  "ulid",
+  "valibot"
+]

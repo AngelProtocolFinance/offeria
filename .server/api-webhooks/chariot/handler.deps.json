@@ -1,0 +1,9 @@
+[
+  "@aws-sdk/client-dynamodb",
+  "@aws-sdk/client-sqs",
+  "@aws-sdk/lib-dynamodb",
+  "date-fns",
+  "stripe",
+  "type-fest",
+  "valibot"
+]

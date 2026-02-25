@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@tailwindcss/oxide'
+  - aws-sdk
+  - esbuild
+  - lefthook
+  - msw

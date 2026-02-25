@@ -1,0 +1,151 @@
+import type { IRegsSearchObj } from "@/reg";
+import { PopoverButton, PopoverPanel } from "@headlessui/react";
+import { valibotResolver } from "@hookform/resolvers/valibot";
+import { subWeeks } from "date-fns";
+import { X } from "lucide-react";
+import type { FC } from "react";
+import { useController, useForm } from "react-hook-form";
+import { Combo } from "#/components/combo";
+import { Field, toYYYMMDD } from "#/components/form";
+import { DrawerIcon } from "#/components/icon";
+import { Select } from "#/components/selector/select";
+import { countries, country_names } from "#/constants/countries";
+import { statuses } from "./constants";
+import { type FV, schema } from "./schema";
+type Props = {
+  onSubmit: (data: FV) => void;
+  onReset: () => void;
+  params: IRegsSearchObj;
+  classes?: string;
+};
+
+export const Form: FC<Props> = ({
+  onReset,
+  onSubmit,
+  params,
+  classes = "",
+}) => {
+  const {
+    register,
+    control,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FV>({
+    resolver: valibotResolver(schema),
+    values: {
+      //set default value so empty can be tagged as invalid
+      start_date: toYYYMMDD(
+        params.start_date
+          ? new Date(params.start_date)
+          : subWeeks(new Date(), 1)
+      ),
+      end_date: toYYYMMDD(
+        params.end_date ? new Date(params.end_date) : new Date()
+      ),
+      country: params.country ?? "",
+      status: params.status || "02",
+    },
+  });
+
+  const { field: country } = useController({ name: "country", control });
+  const { field: stat } = useController({ name: "status", control });
+
+  return (
+    <PopoverPanel
+      as="form"
+      onSubmit={handleSubmit(onSubmit, (err) => {
+        console.error(err);
+      })}
+      onReset={(e) => {
+        e.preventDefault();
+        reset();
+        onReset();
+      }}
+      className={`${classes} grid content-start gap-4 w-full rounded-sm border border-gray-l3 bg-white dark:bg-blue-d5`}
+    >
+      <div className="lg:hidden relative text-[1.25rem] px-4 py-3 -mb-4 font-bold uppercase">
+        <span className="text-blue-d1">Filters</span>
+        <PopoverButton className="absolute top-1/2 -translate-y-1/2 right-2">
+          <X size={33} />
+        </PopoverButton>
+      </div>
+
+      <div className="px-6 lg:pt-6">
+        <Combo
+          value={country.value}
+          onChange={country.onChange}
+          label="Country"
+          placeholder="Select a country"
+          options={country_names}
+          classes={{ input: "pl-12" }}
+          option_disp={(c) => (
+            <>
+              <span className="text-2xl">{countries[c].flag}</span>
+              <span>{c}</span>
+            </>
+          )}
+          btn_disp={(c, open) => {
+            const flag = countries[c]?.flag;
+            return flag ? (
+              <span data-flag className="text-2xl">
+                {flag}
+              </span>
+            ) : (
+              <DrawerIcon
+                is_open={open}
+                size={20}
+                className="justify-self-end dark:text-gray shrink-0"
+              />
+            );
+          }}
+        />
+
+        <div className="grid gap-x-[1.125rem] grid-cols-2 mt-4">
+          <label className="col-span-full text-sm mb-2">Date</label>
+          <Field
+            {...register("start_date")}
+            label=""
+            type="date"
+            error={errors.start_date?.message}
+          />
+          <Field
+            {...register("end_date")}
+            label=""
+            type="date"
+            error={errors.end_date?.message}
+          />
+        </div>
+
+        <Select
+          value={stat.value}
+          onChange={stat.onChange}
+          label="Application Status"
+          classes={{
+            button: "dark:bg-blue-d6",
+            options: "text-sm",
+            container: "max-lg:mb-4 mt-4",
+          }}
+          options={Object.keys(statuses)}
+          option_disp={(s) => (statuses as any)[s]}
+        />
+      </div>
+
+      <div className="max-lg:row-start-2 flex gap-x-4 items-center justify-between max-lg:px-4 max-lg:py-3 p-6 lg:mt-2 bg-blue-l5 dark:bg-blue-d7 border-y lg:border-t border-gray-l3">
+        <h3 className="uppercase lg:hidden">Filter by</h3>
+        <button
+          type="reset"
+          className="text-blue-d1 underline text-sm max-lg:ml-auto"
+        >
+          Reset filters
+        </button>
+        <button
+          type="submit"
+          className="btn btn btn-blue px-6 py-2 rounded-xs text-xs font-bold uppercase"
+        >
+          Apply filters
+        </button>
+      </div>
+    </PopoverPanel>
+  );
+};

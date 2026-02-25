@@ -1,0 +1,32 @@
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-quicksand);
+    font-weight: 700;
+  }
+
+  body {
+    font-family: var(--font-quicksand);
+    font-weight: var(--font-weight-light);
+    color: var(--color-gray-d4);
+  }
+
+  a {
+    cursor: pointer;
+    &[aria-disabled="true"] {
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    &:disabled {
+      cursor: default;
+    }
+  }
+}

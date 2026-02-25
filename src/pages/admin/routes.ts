@@ -1,0 +1,18 @@
+export const routes = {
+  dashboard: "dashboard",
+  edit_profile: "edit-profile",
+  programs: "programs",
+  program_editor: "program-editor",
+  banking: "banking",
+  forms: "forms",
+  donations: "donations",
+  settings: "settings",
+  members: "members",
+  media: "media",
+  funds: "funds",
+  integrations: "integrations",
+  referrals: "referrals",
+  savings: "savings",
+  investments: "investments",
+  assets: "assets",
+} as const;

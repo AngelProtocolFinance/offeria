@@ -1,0 +1,8 @@
+[
+  "@aws-sdk/client-cognito-identity-provider",
+  "@aws-sdk/client-dynamodb",
+  "@aws-sdk/lib-dynamodb",
+  "date-fns",
+  "ksuid",
+  "valibot"
+]

@@ -1,0 +1,13 @@
+import { table } from "$/tables/table";
+
+/**
+ * @param currency - lowercase iso4217 code
+ * @returns number - amount/usd
+ */
+export const unit_per_usd = async (currency: string): Promise<number> => {
+  const { all: rates } = await table.currency_map("Usd");
+  const rate = rates[currency.toUpperCase()];
+
+  if (!rate) throw { message: `Currency ${currency} not found.` };
+  return rate;
+};

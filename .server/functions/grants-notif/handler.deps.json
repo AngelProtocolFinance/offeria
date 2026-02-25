@@ -1,0 +1,9 @@
+[
+  "@aws-sdk/client-dynamodb",
+  "@aws-sdk/client-sesv2",
+  "@aws-sdk/lib-dynamodb",
+  "date-fns",
+  "json-2-csv",
+  "ksuid",
+  "valibot"
+]

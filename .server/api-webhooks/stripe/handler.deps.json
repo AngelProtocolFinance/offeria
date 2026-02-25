@@ -1,0 +1,14 @@
+[
+  "@aws-sdk/client-dynamodb",
+  "@aws-sdk/client-sesv2",
+  "@aws-sdk/client-sqs",
+  "@aws-sdk/lib-dynamodb",
+  "@better-giving/react-emails",
+  "@react-email/components",
+  "date-fns",
+  "decimal.js",
+  "react",
+  "stripe",
+  "type-fest",
+  "valibot"
+]

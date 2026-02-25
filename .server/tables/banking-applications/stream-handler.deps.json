@@ -1,0 +1,11 @@
+[
+  "@aws-sdk/client-dynamodb",
+  "@aws-sdk/client-sesv2",
+  "@aws-sdk/lib-dynamodb",
+  "@aws-sdk/util-dynamodb",
+  "@better-giving/react-emails",
+  "@react-email/components",
+  "decimal.js",
+  "react",
+  "valibot"
+]

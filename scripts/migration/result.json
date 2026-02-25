@@ -1,0 +1,128 @@
+[
+  {
+    "from": "Donations",
+    "to": "better-giving-production-tbldonssettledTable-vbdddkcx",
+    "source_count": 4680,
+    "migrated_count": 4680
+  },
+  {
+    "from": "api-keys",
+    "to": "better-giving-production-tblapikeysTable-kwombkbr",
+    "source_count": 16,
+    "migrated_count": 16
+  },
+  {
+    "from": "liquid",
+    "to": "better-giving-production-tblliquidTable-thxketkz",
+    "source_count": 179,
+    "migrated_count": 179
+  },
+  {
+    "from": "UsersV2",
+    "to": "better-giving-production-tblusersTable-vzrxezcr",
+    "source_count": 3686,
+    "migrated_count": 3686
+  },
+  {
+    "from": "summary",
+    "to": "better-giving-production-tblsummaryTable-kdwrfrvs",
+    "source_count": 0,
+    "migrated_count": 0
+  },
+  {
+    "from": "webhooks",
+    "to": "better-giving-production-tblwebhooksTable-onuobrkv",
+    "source_count": 11,
+    "migrated_count": 11
+  },
+  {
+    "from": "subs",
+    "to": "better-giving-production-tblsubsTable-bdzmwswd",
+    "source_count": 45,
+    "migrated_count": 45
+  },
+  {
+    "from": "donation_messages",
+    "to": "better-giving-production-tbldonmsgsTable-enzwvncz",
+    "source_count": 551,
+    "migrated_count": 551
+  },
+  {
+    "from": "metrics",
+    "to": "better-giving-production-tblmetricsTable-bdkxwdme",
+    "source_count": 45,
+    "migrated_count": 45
+  },
+  {
+    "from": "table",
+    "to": "better-giving-production-tblmainTable-rrwmwxed",
+    "source_count": 1,
+    "migrated_count": 1
+  },
+  {
+    "from": "commissions",
+    "to": "better-giving-production-tblcommissionsTable-ndvafacu",
+    "source_count": 204,
+    "migrated_count": 204
+  },
+  {
+    "from": "users-meta",
+    "to": "better-giving-production-tblusersmetaTable-mozaxenv",
+    "source_count": 13,
+    "migrated_count": 13
+  },
+  {
+    "from": "donations",
+    "to": "better-giving-production-tbldonsTable-dcxfwevu",
+    "source_count": 3036,
+    "migrated_count": 3036
+  },
+  {
+    "from": "payouts-v2",
+    "to": "better-giving-production-tblpayoutsv2Table-shtrcsaw",
+    "source_count": 215,
+    "migrated_count": 215
+  },
+  {
+    "from": "balances",
+    "to": "better-giving-production-tblbalancesTable-mxrrmwdv",
+    "source_count": 325,
+    "migrated_count": 325
+  },
+  {
+    "from": "registrations",
+    "to": "better-giving-production-tblregistrationsTable-szefudhr",
+    "source_count": 1067,
+    "migrated_count": 1067
+  },
+  {
+    "from": "nav-history",
+    "to": "better-giving-production-tblnavhistoryTable-rnvvdctu",
+    "source_count": 453,
+    "migrated_count": 453
+  },
+  {
+    "from": "banking-applications",
+    "to": "better-giving-production-tblbankingappsTable-srrhtrzr",
+    "source_count": 226,
+    "migrated_count": 226
+  },
+  {
+    "from": "bal-txs",
+    "to": "better-giving-production-tblbaltxsTable-dtmrmzsw",
+    "source_count": 1291,
+    "migrated_count": 1291
+  },
+  {
+    "from": "forms",
+    "to": "better-giving-production-tblformsTable-hkscfmou",
+    "source_count": 95,
+    "migrated_count": 95
+  },
+  {
+    "from": "funds",
+    "to": "better-giving-production-tblfundsTable-nhuxmhzb",
+    "source_count": 107,
+    "migrated_count": 107
+  }
+]

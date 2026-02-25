@@ -1,0 +1,36 @@
+import { regdb } from "$/tables/registrations";
+import { resp } from "@/helpers/https";
+import { Progress } from "@/reg/progress";
+import { type IReg, reg_id } from "@/reg/schema";
+import type { ActionFunction } from "react-router";
+import { parse } from "valibot";
+import { cognito, to_auth } from "#/.server/auth";
+import type { ActionData } from "#/types/action";
+
+export const submit_action: ActionFunction = async ({ request, params }) => {
+  const { user, headers } = await cognito.retrieve(request);
+  if (!user) return to_auth(request, headers);
+
+  const id = parse(reg_id, params.regId);
+  const reg = await regdb.reg(id);
+
+  if (!reg) throw resp.status(404, `reg:${id} not found`);
+
+  const r = new Progress(reg).banking;
+  if (!r) throw "Registration not ready for submission";
+
+  if (user.email !== r.r_id && !user.groups.includes("ap-admin")) {
+    throw resp.status(403);
+  }
+
+  const b = regdb.reg_update_build({
+    status: "02",
+  });
+  //reset previous review
+  b.remove("status_rejected_reason" satisfies keyof IReg);
+  await regdb.reg_update(r.id, b);
+
+  return {
+    __ok: "Your application has been submitted. We will get back to you soon!",
+  } satisfies ActionData;
+};
