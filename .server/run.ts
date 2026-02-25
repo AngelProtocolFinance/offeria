@@ -9,7 +9,7 @@ import { whh_stripe } from "./api-webhooks/stripe";
 import { bucket as bucket_fn } from "./bucket";
 import * as crons from "./crons";
 import { email as email_fn } from "./email";
-import * as fns from "./functions";
+// import * as fns from "./functions";
 import { is_dev } from "./helpers";
 import * as qs from "./queues/resource";
 import { secrets as secrets_fn } from "./secrets";
@@ -85,7 +85,7 @@ export default function (s: TStage): Record<string, any> {
   if (!is_dev(s)) {
     crons.nav_update(links);
     crons.commissions(links);
-    crons.grants(fns.grants_notif(links), fns.grants_execute(links));
+    // crons.grants(fns.grants_notif(links), fns.grants_execute(links));
     crons.currencies(links);
     crons.savings_snapshot(links);
   }

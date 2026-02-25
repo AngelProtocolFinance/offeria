@@ -154,7 +154,7 @@ export function use_rhf(fv: FV) {
     const tipv = tip_val(tf, tip, amnt);
     if (tipv) {
       items.push({
-        name: "Donation to Better Giving",
+        name: "Donation to Offeria",
         amount_atomic: to_atomic(tipv),
       });
     }
@@ -218,7 +218,7 @@ export function use_rhf(fv: FV) {
     const tipv = tip_val(tf, tip, amnt);
     if (tipv) {
       items.push({
-        name: "Donation to Better Giving",
+        name: "Donation to Offeria",
         amnt: rd(tipv, d),
       });
     }

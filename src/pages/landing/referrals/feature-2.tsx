@@ -17,7 +17,7 @@ export const items: TListItem[] = [
     title1: "Step 1",
     title2: "Get Your Unique Link",
     description:
-      "Sign up for a free Better Giving account and access your referral link.",
+      "Sign up for a free Offeria account and access your referral link.",
     image: { src: laira_laptop, width: 50, alt: "Laira negotiating" },
   },
   {
@@ -31,7 +31,7 @@ export const items: TListItem[] = [
     title1: "Step 3",
     title2: "Earn Rewards",
     description:
-      "Earn through Better Giving whenever your referred nonprofits succeed their donations stay 100% theirs.",
+      "Earn through Offeria whenever your referred nonprofits succeed their donations stay 100% theirs.",
     image: { src: laira_shake_hands, width: 90, alt: "Laira presenting" },
   },
 ];
@@ -44,7 +44,7 @@ export function Feature2({ className = "" }) {
       </h2>
 
       <p className="text-gray text-center max-lg:px-10 max-lg:text-center mb-2 text-xl col-span-full">
-        Our referral program makes it easy to share Better Giving while earning
+        Our referral program makes it easy to share Offeria while earning
         rewards.
       </p>
 

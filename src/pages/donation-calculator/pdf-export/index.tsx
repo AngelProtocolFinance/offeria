@@ -37,7 +37,7 @@ export default function PdfExport() {
     <ClientOnly>
       {() => (
         <PDFViewer width="100%" height="100%">
-          <Document title="better-giving-report" style={styles.doc}>
+          <Document title="offeria-report" style={styles.doc}>
             <Page1 v={view} />
             <Page2 v={view} />
             <Page3 />

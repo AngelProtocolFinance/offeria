@@ -32,7 +32,7 @@ export const socials: SocialMedia[] = [
     src: telegram,
     title: "Telegram",
     size: 22,
-    handle: "@bettergiving",
+    handle: "@offeria",
   },
 ];
 

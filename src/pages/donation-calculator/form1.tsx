@@ -85,8 +85,8 @@ export function Form1({ classes = "", state, setState }: Props) {
           </Label>
         </div>
         <Description className=" text-gray mt-1 text-sm">
-          Better Giving enables donors to cover fees, and our data shows 80% opt
-          to do so.
+          Offeria enables donors to cover fees, and our data shows 80% opt to do
+          so.
         </Description>
       </Field>
 
@@ -97,8 +97,8 @@ export function Form1({ classes = "", state, setState }: Props) {
             <Content className="max-w-xs text-center bg-gray-d4 p-4 text-gray-l4 text-xs shadow-lg rounded-lg">
               Based on industry data, each payment type represents a portion of
               potential donations: Credit Card (63%), Bank/ACH (10%), Digital
-              Wallets (7%), DAF (12%), Stocks (6%), Crypto (2%). Better Giving
-              enables all these payment methods.
+              Wallets (7%), DAF (12%), Stocks (6%), Crypto (2%). Offeria enables
+              all these payment methods.
               <Arrow />
             </Content>
           }

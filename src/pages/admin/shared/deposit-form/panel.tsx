@@ -1,3 +1,4 @@
+import { domain } from "@/constants";
 import { DialogPanel, Radio, RadioGroup } from "@headlessui/react";
 import { Check, X } from "lucide-react";
 import { useState } from "react";
@@ -46,7 +47,7 @@ interface InfoRowWithDetailsProps {
 }
 
 const BANK_DETAILS = {
-  account_name: "Better Giving",
+  account_name: "Offeria",
   account_number: "822000812545",
   routing_number: "026073150",
   swift_code: "CMFGUS33",
@@ -75,7 +76,7 @@ export function Panel({
       <div className="p-6 md:p-8 border-b border-gray-l3 relative">
         <h2 className="text-2xl font-bold text-gray-d4 mb-2">Deposit Funds</h2>
         <p className="text-sm text-gray">
-          Transfer funds to your Better Giving account
+          Transfer funds to your Offeria account
         </p>
         <button
           type="button"
@@ -131,10 +132,10 @@ export function Panel({
         <p className="text-sm text-gray">
           For non-USD transfers, contact{" "}
           <a
-            href="mailto:hi@better.giving"
+            href={`mailto:hi@${domain}`}
             className="text-blue-d1 underline hover:no-underline"
           >
-            hi@better.giving
+            hi@{domain}
           </a>{" "}
           for specific instructions.
         </p>

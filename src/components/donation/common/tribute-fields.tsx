@@ -68,7 +68,7 @@ export function TributeFields({
               <Field
                 {...register("tribute.notif.to_email")}
                 label="Email address"
-                placeholder="e.g. janedoe@better.giving"
+                placeholder="e.g. janedoe@offeria.org"
                 classes={{
                   container: "[&_label]:text-sm [&_input]:text-sm",
                   input: "field-input-donate",

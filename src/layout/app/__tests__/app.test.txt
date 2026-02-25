@@ -6,7 +6,7 @@ import { describe, expect, test, vi } from "vitest";
 import { routes } from "../App";
 
 const homeHeroText = /simplified giving, amplified impact/i;
-const marketplaceHeroText = /better giving redefines/i;
+const marketplaceHeroText = /offeria redefines/i;
 
 const marketLink = /explore all causes/i;
 const loginLink = /log in/i;

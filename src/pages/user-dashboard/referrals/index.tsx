@@ -8,7 +8,7 @@ import { Earnings } from "./earnings";
 export const meta: Route.MetaFunction = () => {
   return metas({
     title: "My Referrals",
-    description: "Track your referrals and earnings on Better Giving.",
+    description: "Track your referrals and earnings on Offeria.",
   });
 };
 export { loader } from "./api";

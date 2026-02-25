@@ -130,10 +130,10 @@ export function DirectMode({ fv, init, classes = "", donor }: Props) {
         the value of your cryptocurrency donation may vary between the time it
         is sent and the time it is received. Donors are responsible for ensuring
         they send the correct token and amount pledged, as incorrect submissions
-        may result in processing errors and/or a permanent loss of funds. Better
-        Giving takes no responsibility for any variance in value of the donation
-        made during the processing period, or any loss of funds caused by donor
-        error when the donation is made.
+        may result in processing errors and/or a permanent loss of funds.
+        Offeria takes no responsibility for any variance in value of the
+        donation made during the processing period, or any loss of funds caused
+        by donor error when the donation is made.
       </p>
 
       <ContinueBtn

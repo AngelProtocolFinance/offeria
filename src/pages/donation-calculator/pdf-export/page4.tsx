@@ -98,14 +98,14 @@ export function Page4() {
               fontSize: fs.lg,
             }}
           >
-            Better Giving Platform
+            Offeria Platform
           </T>
           <V style={{ marginLeft: w["6"] }}>
             <V style={listItemStyle}>
               <T style={bulletStyle}>•</T>
               <T>
-                Better Giving doesn't charge processing fees, but third-party
-                services charge an average of 2% (no platform fees)
+                Offeria doesn't charge processing fees, but third-party services
+                charge an average of 2% (no platform fees)
               </T>
             </V>
             <V style={listItemStyle}>
@@ -118,8 +118,8 @@ export function Page4() {
             <V style={listItemStyle}>
               <T style={bulletStyle}>•</T>
               <T>
-                Better Giving accepts all donation types (credit cards, ACH,
-                digital wallets, crypto, stocks, DAF)
+                Offeria accepts all donation types (credit cards, ACH, digital
+                wallets, crypto, stocks, DAF)
               </T>
             </V>
           </V>

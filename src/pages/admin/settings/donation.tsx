@@ -105,8 +105,8 @@ export function DonationTab({
         </CheckField>
         <span className="text-xs sm:text-sm italic text-gray">
           In the donation form, there is a section in which users can choose to
-          support Better Giving by contributing any amount they desire alongside
-          their donation to you - the amount they contribute will not affect the
+          support Offeria by contributing any amount they desire alongside their
+          donation to you - the amount they contribute will not affect the
           donation amount you receive. You may choose to turn this step off in
           the donation flow by ticking the checkbox above and we will instead
           apply a fixed 1.5% fee to any donation amount you receive.

@@ -278,7 +278,7 @@ export function Page2({ v }: { v: View }) {
           The Power of Compound Growth
         </T>
         <T style={{ color: blue.d2, fontSize: fs.sm2 }}>
-          These projections demonstrate how Better Giving's integrated approach
+          These projections demonstrate how Offeria's integrated approach
           compounds over time. Our organization could accumulate significant
           additional funds through the combination of reduced processing fees,
           expanded donation types, and strategic investments.

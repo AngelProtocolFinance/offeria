@@ -55,18 +55,6 @@ declare module "sst" {
       "sender": string
       "type": "sst.aws.Email"
     }
-    "fn-grants-execute": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "fn-grants-notif": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "lnk-sfn-grants": {
-      "arn": string
-      "type": "sst.sst.Linkable"
-    }
     "q-don-settlement": {
       "type": "sst.aws.Queue"
       "url": string
@@ -82,10 +70,6 @@ declare module "sst" {
     "q-don-success-dlq": {
       "type": "sst.aws.Queue"
       "url": string
-    }
-    "sfn-grants": {
-      "arn": string
-      "type": "sst.aws.StepFunctions"
     }
     "tbl-api-keys": {
       "name": string

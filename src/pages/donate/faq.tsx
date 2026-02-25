@@ -55,15 +55,14 @@ const faqs = [
     question: "How does my donation work to benefit nonprofits?",
     paragraphs: [
       <p>
-        Better Giving handles all donation processing and reporting, and grants
-        your donation 100% to the charitable organization you selected. This
+        Offeria handles all donation processing and reporting, and grants your
+        donation 100% to the charitable organization you selected. This
         streamlines efforts and saves costs for the nonprofit you're supporting.
       </p>,
       <p>
-        All nonprofits using Better Giving also have free access to high-yield
-        savings and managed investment funds, meaning they can put your donation
-        to work to provide for their future. When you give today, you give
-        forever.
+        All nonprofits using Offeria also have free access to high-yield savings
+        and managed investment funds, meaning they can put your donation to work
+        to provide for their future. When you give today, you give forever.
       </p>,
     ],
   },
@@ -96,12 +95,12 @@ const faqs = [
   },
   {
     id: 3,
-    question: "How much does Better Giving charge?",
+    question: "How much does Offeria charge?",
     paragraphs: [
       <p>
-        It is free to set up and use a Better Giving account. No subscriptions.
-        No upfront costs. No platform fees (unless a nonprofit has opted out of
-        offering donors a voluntary donation to Better Giving).
+        It is free to set up and use a Offeria account. No subscriptions. No
+        upfront costs. No platform fees (unless a nonprofit has opted out of
+        offering donors a voluntary donation to Offeria).
       </p>,
       <p>Payment processing fees from 3rd parties may apply.</p>,
     ],
@@ -128,8 +127,8 @@ const faqs = [
         memo.
       </p>,
       <p>
-        If you would like to add a contribution for Better Giving to help keep
-        our services free, you may add that in the memo with{" "}
+        If you would like to add a contribution for Offeria to help keep our
+        services free, you may add that in the memo with{" "}
         <Em
           intensity={1}
           classes="text-gray-d4 text-xs font-mono bg-blue-l4 p-0.5"

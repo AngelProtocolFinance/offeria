@@ -82,7 +82,7 @@ function Copyright({ classes = "" }) {
       <span className="hidden xl:inline">,</span>
       <span>
         {" "}
-        a d/b/a of Better Giving Inc., a Registered Charitable 501(c)(3) (EIN
+        a d/b/a of Offeria, Inc., a Registered Charitable 501(c)(3) (EIN
         87-3758939)
       </span>
     </p>

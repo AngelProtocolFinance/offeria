@@ -94,10 +94,9 @@ export function Footer({ style = {} }: { style?: object }) {
           fontSize: fs.sm,
         }}
       >
-        Copyright © {new Date().getFullYear()} Better Giving. All rights
-        reserved. The information provided by Better Giving in this material is
-        for informational and illustrative purposes only, and is subject to
-        change.
+        Copyright © {new Date().getFullYear()} Offeria. All rights reserved. The
+        information provided by Offeria in this material is for informational
+        and illustrative purposes only, and is subject to change.
       </T>
     </V>
   );

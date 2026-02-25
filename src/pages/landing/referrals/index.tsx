@@ -12,9 +12,9 @@ import { Top } from "./top";
 
 export const meta: MetaFunction = () =>
   metas({
-    title: "Referral Program | Better Giving",
+    title: "Referral Program | Offeria",
     description:
-      "Support nonprofits and earn rewards by sharing Better Giving. Join our referral program to make an impact, earn effortlessly, and grow a community of changemakers. Sign up for your unique link and start sharing today!",
+      "Support nonprofits and earn rewards by sharing Offeria. Join our referral program to make an impact, earn effortlessly, and grow a community of changemakers. Sign up for your unique link and start sharing today!",
   });
 
 export default function Referrals() {

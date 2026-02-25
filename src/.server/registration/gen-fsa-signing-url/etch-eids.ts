@@ -31,8 +31,8 @@ export const etch_eids = async (
   const file_data = {
     id: FILE_ALIAS,
     castEid: nvs.anvil.fsa_template_id,
-    title: "Better Giving Fiscal Sponsorship And Grant Agreement",
-    filename: "better-giving-fs-ga.pdf",
+    title: "Offeria Fiscal Sponsorship And Grant Agreement",
+    filename: "offeria-fs-ga.pdf",
     fontSize: 10,
     textColor: "#333333",
   };

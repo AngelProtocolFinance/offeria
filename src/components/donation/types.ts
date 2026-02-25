@@ -24,7 +24,7 @@ export const recipient_id = v.pipe(
 );
 export const donation_recipient = v.object({
   id: v.fallback(recipient_id, "1"),
-  name: v.fallback(v.pipe(v.string(), v.nonEmpty()), "Better Giving"),
+  name: v.fallback(v.pipe(v.string(), v.nonEmpty()), "Offeria"),
   /** int-str array */
   members: v.array(v.string()),
   hide_bg_tip: v.optional(v.boolean()),
@@ -41,7 +41,7 @@ export const donation_recipient_init = (
 ): DonationRecipient => {
   return {
     id: "1",
-    name: "Better Giving",
+    name: "Offeria",
     members: [],
     donor_address_required: false,
     ...overrides,

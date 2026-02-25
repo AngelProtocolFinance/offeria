@@ -49,8 +49,8 @@ export function Stocks(props: StocksDonationDetails) {
         You may also need the following information:
       </p>
       <span className="rounded-sm bg-gray-l4 dark:bg-gray-d3 p-3 text-sm leading-relaxed ">
-        Better Giving is a nonprofit with 501(c)(3) tax-exempt status, Federal
-        ID #: 87-3758939.
+        Offeria is a nonprofit with 501(c)(3) tax-exempt status, Federal ID #:
+        87-3758939.
       </span>
 
       <p className="mt-8 text-sm">
@@ -92,12 +92,12 @@ const email_link = (
 ) => `
 mailto:${"[ Your broker's email ]"}
   ?cc=${emails.hi}
-  &subject=Stock donation to Better Giving supporting ${charity_name}
+  &subject=Stock donation to Offeria supporting ${charity_name}
   &body=
 Hi,${NEW_LINE}
 ${NEW_LINE}
 I would like to donate stock to support ${charity_name} (${profile_url}). 
-I have CCed Better Giving (EIN 87-3758939) to ensure this tax-deductible donation gets accounted for correctly, 
+I have CCed Offeria (EIN 87-3758939) to ensure this tax-deductible donation gets accounted for correctly, 
 please ask them if you have any technical questions.${NEW_LINE}
 ${NEW_LINE}
 Please transfer ${number_of_shares || "[NUMBER_OF_SHARES]"} shares of ${

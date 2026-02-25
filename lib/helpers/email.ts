@@ -13,7 +13,7 @@ interface IInput {
 
 export async function send_email(client: SESv2Client, i: IInput) {
   const cmd = new SendEmailCommand({
-    FromEmailAddress: "Better Giving 😇 <hi@better.giving>",
+    FromEmailAddress: "Offeria 🙏 <hi@offeria.org>",
     Destination: { ToAddresses: i.to, BccAddresses: i.bcc },
     Content: {
       Simple: {

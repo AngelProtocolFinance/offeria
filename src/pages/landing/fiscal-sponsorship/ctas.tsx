@@ -23,9 +23,9 @@ export function Ctas({ classes = "" }) {
             Global nonprofits, local benefits.
           </h3>
           <p className="md:text-lg mb-4 max-md:text-center">
-            Wherever your nonprofit is based, Better Giving connects you with
-            U.S. tax-exempt benefits and donor networks helping your mission
-            grow without borders.
+            Wherever your nonprofit is based, Offeria connects you with U.S.
+            tax-exempt benefits and donor networks helping your mission grow
+            without borders.
           </p>
           <div className="justify-self-center md:justify-self-start">
             <Link
@@ -105,10 +105,10 @@ export function Ctas({ classes = "" }) {
             Local giving, global reach.
           </h3>
           <p className="md:text-lg mb-4 max-md:text-center">
-            Better Giving supports localized payments, letting donors give using
-            their preferred methods — cards, wallets, and bank transfers, all in
-            their home currency. Every gift is processed securely, ensuring a
-            seamless experience for donors anywhere in the world.
+            Offeria supports localized payments, letting donors give using their
+            preferred methods — cards, wallets, and bank transfers, all in their
+            home currency. Every gift is processed securely, ensuring a seamless
+            experience for donors anywhere in the world.
           </p>
           <div className="justify-self-center md:justify-self-start">
             <Link

@@ -16,8 +16,8 @@ export function Cta({ classes = "", ...props }: Props) {
         {props.cta.pre} Grow Together.
       </h4>
       <h3 className="text-center section-body text-balance text-white mb-9">
-        {props.cta.body} — membership in the Better Giving Alliance starts free,
-        and grows with you.
+        {props.cta.body} — membership in the Offeria Alliance starts free, and
+        grows with you.
       </h3>
       <div className="flex flex-col @xl:flex-row justify-center items-center gap-6 mt-10">
         <Link

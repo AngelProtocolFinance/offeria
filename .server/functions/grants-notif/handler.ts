@@ -49,7 +49,7 @@ export const index: ScheduledHandler = async (_, ctx) => {
     );
     const usd_bal_val = usd_bal.totalWorth.value;
 
-    const from = `Better Giving 😇 <${emails.hi}>`;
+    const from = `Offeria 🙏 <${emails.hi}>`;
     const tos = [emails.tim, emails.chauncey, emails.jms];
 
     const csv_content = json2csv(rows);

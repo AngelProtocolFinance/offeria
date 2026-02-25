@@ -73,7 +73,7 @@ export function Video() {
       <h2
         className={`${styles.heading} justify-self-center text-gray-d4 text-[32px] md:text-[42px] text-center mb-5 -mt-12 sm:-mt-16`}
       >
-        The Better.Giving Alliance
+        The Offeria Alliance
       </h2>
       <p className="z-10 text-[20px] md:text-[28px] text-gray/80 font-medium text-center max-w-2xl mx-auto text-pretty mb-14">
         Join a global alliance of partners united around a giving pledge to

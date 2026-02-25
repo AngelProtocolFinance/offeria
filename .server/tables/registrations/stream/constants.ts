@@ -38,7 +38,7 @@ export const ROLES: { [role in TRole]: string } = {
 
 export const REFERRALS: { [method in TReferralMethod]: string } = {
   referral: "Others", //not used: formerly: "Referral Code"
-  "better-giving-alliance": "Better.Giving website",
+  "better-giving-alliance": "Offeria website",
   discord: "Discord",
   facebook: "Facebook",
   linkedin: "LinkedIn",

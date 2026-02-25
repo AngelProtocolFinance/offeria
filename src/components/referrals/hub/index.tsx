@@ -54,8 +54,8 @@ export const Hub = ({ classes = "" }: Props) => {
       <h3 className="text-2xl mb-2">Referral Hub</h3>
       <div className={" bg-gray-l5 p-6 rounded-xl border border-gray-l4"}>
         <p className="mb-6 text-gray-d1">
-          Your all-in-one resource for sharing Better Giving, equipping you to
-          refer nonprofits, grow your network, and earn rewards smoothly.
+          Your all-in-one resource for sharing Offeria, equipping you to refer
+          nonprofits, grow your network, and earn rewards smoothly.
         </p>
         <div className="overflow-x-auto">
           <div className="grid grid-rows-[auto_1fr] grid-cols-5 gap-x-8 min-w-max">

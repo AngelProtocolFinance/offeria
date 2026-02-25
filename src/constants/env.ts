@@ -8,10 +8,10 @@ const {
 // THE CONSTANTS BELOW ARE ALL CONFIGURED BY ENVIRONMENT VARIABLES
 // AND DISPLAY THE DESIRED TEXT/IMAGES/URLS/ETC THROUGHOUT THE APP
 export const APP_NAME = "Offeria";
-export const SEO_IMAGE = "https://www.offeria.church/favicon.png";
-export const EMAIL_SUPPORT = "support@better.giving";
-export const BASE_URL = `https://${env === "dev" ? "staging." : ""}better.giving`;
-export const DEV_DOCS_BASE_URL = "https://developer.better.giving";
+export const SEO_IMAGE = "https://www.offeria.org/favicon.png";
+export const EMAIL_SUPPORT = "support@offeria.org";
+export const BASE_URL = `https://${env === "dev" ? "staging." : ""}offeria.org`;
+export const DEV_DOCS_BASE_URL = "https://developer.offeria.org";
 export const BOOK_A_DEMO =
   "https://meetings-eu1.hubspot.com/chauncey-st-john/better-giving-nonprofit-demo";
 export const INTERCOM_HELP = "https://intercom.help/better-giving/en";

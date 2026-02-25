@@ -19,13 +19,13 @@ export default function PrivacyPolicy() {
         <strong>Introduction</strong>
       </p>
       <p>
-        Better Giving, Inc. (<strong>&quot;Better Giving</strong>&quot;, &quot;
+        Offeria, Inc. (<strong>&quot;Offeria</strong>&quot;, &quot;
         <strong>We</strong>&quot; or “<strong>Our</strong>”) respects your
         privacy and is committed to protecting it through our compliance with
         this policy.
       </p>
       <p>
-        This policy applies to the website www.better.giving, as well as
+        This policy applies to the website www.offeria.org, as well as
         applications, products and services (collectively our &quot;
         <strong>Site</strong>&quot;) on or in which it is posted, linked or
         referenced. This policy provides information about our practices for
@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
         received personal information from a child under 13 without verification
         of parental consent, we will delete that information. If you believe we
         might have any information from or about a child under 13, please
-        contact us at: hi@better.giving.{" "}
+        contact us at: hi@offeria.org.{" "}
       </p>
       <p>
         <strong>Information We Collect About You and How We Collect It</strong>
@@ -438,8 +438,8 @@ export default function PrivacyPolicy() {
         required to inform you of the lawful bases of our processing of your
         personal information, which are described below. If you have questions
         about the legal bases under which we are processing your information,
-        please contact us at hi@better.giving. The legal bases under which We
-        may process your personal information include:
+        please contact us at hi@offeria.org. The legal bases under which We may
+        process your personal information include:
       </p>
       <ul>
         <li>To provide our services to you. </li>
@@ -468,7 +468,7 @@ export default function PrivacyPolicy() {
       </p>
       <p>
         Under the GDPR you have certain rights regarding your personal
-        information. You may email hi@better.giving to request the following
+        information. You may email hi@offeria.org to request the following
         actions:
       </p>
       <ul>
@@ -551,7 +551,7 @@ export default function PrivacyPolicy() {
       </p>
       <p>
         California consumers may make a request pursuant to their rights under
-        the CCPA by contacting us at hi@better.giving.{" "}
+        the CCPA by contacting us at hi@offeria.org.{" "}
       </p>
       <p>
         <strong>Data Security</strong>
@@ -595,7 +595,7 @@ export default function PrivacyPolicy() {
       </p>
       <p>
         To ask questions or comment about this privacy policy and our privacy
-        practices, contact us at hi@better.giving.{" "}
+        practices, contact us at hi@offeria.org.{" "}
       </p>
     </div>
   );

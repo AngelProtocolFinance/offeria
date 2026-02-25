@@ -16,7 +16,7 @@ export const roles: { [key in TRole]: string } = {
   other: "Other",
 };
 export const referral_methods: { [key in TReferralMethod]: string } = {
-  "better-giving-alliance": "Better.Giving Website",
+  "better-giving-alliance": "Offeria Website",
   discord: "Discord",
   facebook: "Facebook",
   linkedin: "Linkedin",

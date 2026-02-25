@@ -18,7 +18,7 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
   {
     content:
-      "Better Giving is an incredible idea, platform and opportunity. I have loved working with the team.",
+      "Offeria is an incredible idea, platform and opportunity. I have loved working with the team.",
     reviewer: "Faith Flanigan",
     org: undefined,
     org_logo: { w: 180, src: buck, classes: "mt-2" },
@@ -39,14 +39,14 @@ export const testimonials: Testimonial[] = [
   },
   {
     content:
-      "As pioneers in the realm of leveraging endowments for sustainable giving, our journey with the Better Giving experience has been nothing short of transformative.",
+      "As pioneers in the realm of leveraging endowments for sustainable giving, our journey with the Offeria experience has been nothing short of transformative.",
     reviewer: "Joy Onuche",
     org: "Shoes that Speak Africa",
     org_logo: { w: 80, src: shoe },
   },
   {
     content:
-      "As pioneers in leveraging Better Giving for online fundraising, our experience thus far has been overwhelmingly positive. Better Giving has provided us with a powerful platform to engage donors, expand our reach, and make a tangible impact in the communities we serve in Sierra Leone.",
+      "As pioneers in leveraging Offeria for online fundraising, our experience thus far has been overwhelmingly positive. Offeria has provided us with a powerful platform to engage donors, expand our reach, and make a tangible impact in the communities we serve in Sierra Leone.",
     reviewer: "Brima Kabbah",
     org: "Community Action for Sustainable Development",
     org_logo: { w: 60, src: casd },

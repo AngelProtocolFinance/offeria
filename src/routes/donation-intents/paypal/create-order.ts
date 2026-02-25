@@ -43,7 +43,7 @@ export const create_order = async ({
 
     if (tip) {
       p.items.push({
-        name: "Donation to Better Giving",
+        name: "Donation to Offeria",
         quantity: "1",
         unit_amount: {
           currency_code: c,

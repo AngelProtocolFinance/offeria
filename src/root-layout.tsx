@@ -1,12 +1,12 @@
 import type { PropsWithChildren } from "react";
 import { Links, Meta, Scripts, ScrollRestoration } from "react-router";
 import { Toaster } from "sonner";
-import { useConsent } from "./use-consent";
+// import { useConsent } from "./use-consent";
 import { useNProgress } from "./use-nprogress";
 
 export function Layout({ children }: PropsWithChildren<{ classes?: string }>) {
   useNProgress();
-  useConsent();
+  // useConsent();
   return (
     <html lang="en">
       <head>

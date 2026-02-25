@@ -52,7 +52,7 @@ export function Page1({ v }: Props) {
               fontSize: fs.xl,
             }}
           >
-            Advantage with Better giving
+            Advantage with Offeria
           </T>
           <T style={{ fontSize: fs.lg, marginTop: w["4"], fontWeight: fw.n }}>
             Donation Processing & Investment Impact Calculator
@@ -183,7 +183,7 @@ export function Page1({ v }: Props) {
             textTransform: "uppercase",
           }}
         >
-          Annual Donation Processing Impact With Better Giving
+          Annual Donation Processing Impact With Offeria
         </T>
         <V style={{ height: 2, backgroundColor: blue.d, width: 128 }} />
       </V>
@@ -245,9 +245,7 @@ export function Page1({ v }: Props) {
         }}
       >
         <V>
-          <T style={{ fontSize: fs.base, fontWeight: fw.sb }}>
-            With Better Giving
-          </T>
+          <T style={{ fontSize: fs.base, fontWeight: fw.sb }}>With Offeria</T>
           <V
             style={{
               display: "flex",
@@ -311,8 +309,8 @@ export function Page1({ v }: Props) {
           fontWeight: fw.sb,
         }}
       >
-        How Strategic Saving and Allocation Through Better Giving Could Grow
-        Your Nonprofit's Resources
+        How Strategic Saving and Allocation Through Offeria Could Grow Your
+        Nonprofit's Resources
       </T>
 
       <V

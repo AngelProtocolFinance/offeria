@@ -19,19 +19,19 @@ export function Docs({ classes = "" }) {
       {isExpanded && (
         <div className="mt-8 space-y-8">
           <section>
-            <h4 className="font-semibold mb-4">Better Giving Platform</h4>
+            <h4 className="font-semibold mb-4">Offeria Platform</h4>
             <ul className="space-y-4 list-disc pl-6">
               <li className="text-gray">
-                Better Giving doesn't charge processing fees, but third-party
-                services charge an average of 2% (no platform fees)
+                Offeria doesn't charge processing fees, but third-party services
+                charge an average of 2% (no platform fees)
               </li>
               <li className="text-gray">
                 80% of donors opt to cover processing fees (based on platform
                 data)
               </li>
               <li className="text-gray">
-                Better Giving accepts all donation types (credit cards, ACH,
-                digital wallets, crypto, stocks, DAF)
+                Offeria accepts all donation types (credit cards, ACH, digital
+                wallets, crypto, stocks, DAF)
               </li>
             </ul>
           </section>

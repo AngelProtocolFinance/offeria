@@ -13,8 +13,8 @@ export function Quote({ className = "" }) {
         </h2>
         <p className="mb-10 text-lg text-center @6xl:text-left">
           Founded in 2021 to help nonprofits become more financially resilient,
-          Better Giving was born from a vision to equip organizations with the
-          tools they need for financial independence. We saw how vulnerable
+          Offeria was born from a vision to equip organizations with the tools
+          they need for financial independence. We saw how vulnerable
           organizations were, and know how difficult it can be to build up
           reserves from a place of scarcity. From offering free donation
           processing to providing no-barrier savings & investment services, our

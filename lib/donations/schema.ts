@@ -117,7 +117,7 @@ export const donor_fv_init: IDonorFv = {
   title: "",
   first_name: "unknown",
   last_name: "unknown",
-  email: "hi@better.giving",
+  email: "hi@offeria.org",
 };
 
 const money = v.pipe(v.number(), v.minValue(0));

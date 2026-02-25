@@ -17,8 +17,8 @@ export function Faq({ classes = "" }) {
         <li className="">
           <strong className="">Who can join?</strong>
           <p className="text-gray-d1">
-            Anyone with a Better Giving account - donors, consultants,
-            influencers, nonprofits.
+            Anyone with a Offeria account - donors, consultants, influencers,
+            nonprofits.
           </p>
         </li>
 
@@ -47,11 +47,11 @@ export function Faq({ classes = "" }) {
         </li>
         <li>
           <strong className="">
-            Why would a nonprofit want to use Better Giving?
+            Why would a nonprofit want to use Offeria?
           </strong>
           <p className="text-gray-d1">
-            Better Giving helps nonprofits increase donations with modern tools
-            for donor engagement, easy online giving, and access to a growing
+            Offeria helps nonprofits increase donations with modern tools for
+            donor engagement, easy online giving, and access to a growing
             network of supporters. It's free to join, and they keep 100% of
             their donations no hidden fees or cuts.
           </p>

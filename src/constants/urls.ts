@@ -1,8 +1,8 @@
 import { BASE_URL, INTERCOM_HELP, env } from "./env";
 
 export const APIs = {
-  aws: "https://ap-api.better.giving",
-  apes: `https://apes-api.better.giving/${env}`,
+  aws: "https://ap-api.offeria.org",
+  apes: `https://apes-api.offeria.org/${env}`,
   wordpress: "https://angelgiving.10web.site/wp-json/wp/v2",
 };
 

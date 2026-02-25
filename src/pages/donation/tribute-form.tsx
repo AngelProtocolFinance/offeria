@@ -70,7 +70,7 @@ export function TributeForm({ classes = "", init }: Props) {
             {...register("notif.to_email", { shouldUnregister: true })}
             disabled={!!init?.notif}
             label="Email address"
-            placeholder="e.g. janedoe@better.giving"
+            placeholder="e.g. janedoe@offeria.org"
             classes={{
               container: "[&_label]:text-sm [&_input]:text-sm",
               input: "field-input-donate",

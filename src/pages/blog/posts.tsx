@@ -27,7 +27,7 @@ export const headers: Route.HeadersFunction = () => ({
 });
 
 export const meta: Route.MetaFunction = () =>
-  metas({ title: "Blog - Better Giving", description: "Checkout the latest" });
+  metas({ title: "Blog - Offeria", description: "Checkout the latest" });
 
 export { ErrorBoundary } from "#/components/error";
 export default CacheRoute(Posts);

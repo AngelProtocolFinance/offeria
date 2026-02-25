@@ -1,4 +1,4 @@
-  export const fees = {
+export const fees = {
   /** Base fee at 1.5% for nonprofits that opt-out of BG tipping */
   base: 0.015,
   /** Fiscal sponsorship fee at 2.9% */

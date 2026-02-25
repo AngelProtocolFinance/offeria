@@ -319,7 +319,7 @@ const handle_record = async (b: IDonationSettled) => {
         id: tip_id,
         created_at: parent_settlement.date,
         to_id: nvs.app.npo_id_tip.toString(),
-        to_name: "Better Giving",
+        to_name: "Offeria",
         to_type: "npo",
         to_tip_allowed: false,
         to_members: [],

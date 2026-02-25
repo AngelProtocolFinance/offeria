@@ -36,9 +36,9 @@ export function Chart({ classes = "", ...v }: Props) {
       </h1>
 
       <p className="text-sm text-gray-d1 mb-4">
-        This chart shows the financial advantage of Better Giving over time.
-        Adjust the slider to see shorter or longer-term projections and their
-        impact on your organization's finances.
+        This chart shows the financial advantage of Offeria over time. Adjust
+        the slider to see shorter or longer-term projections and their impact on
+        your organization's finances.
       </p>
 
       <div className="mb-8 px-2">
@@ -94,7 +94,7 @@ export function Chart({ classes = "", ...v }: Props) {
           The Power of Compound Growth
         </h3>
         <p className="text-sm text-blue-d2">
-          This {yrs}-year projection demonstrates how Better Giving's integrated
+          This {yrs}-year projection demonstrates how Offeria's integrated
           approach compounds over time. By Year {yrs}, your organization could
           accumulate significant additional funds through the combination of
           reduced processing fees, expanded donation types, and strategic

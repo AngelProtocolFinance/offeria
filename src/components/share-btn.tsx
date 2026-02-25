@@ -39,7 +39,7 @@ export function ShareButton({ classes = "", ...p }: IShareButton) {
       name: "LinkedIn",
       icon: <Image src={linkedin} width={20} alt="letters i & n" />,
       getShareLink: ($) => {
-        const text = `Please support ${$.orgName} ${$.url} via @better giving`;
+        const text = `Please support ${$.orgName} ${$.url} via @offeria`;
         return `https://www.linkedin.com/feed/?shareActive=true&text=${encodeURIComponent(text)}`;
       },
     },

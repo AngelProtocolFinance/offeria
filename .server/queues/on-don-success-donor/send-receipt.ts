@@ -34,7 +34,7 @@ export const send_receipt = async (d: IDonation) => {
       id: d.id,
       date: to_pretty_utc(d.created_at),
       amount: amnt,
-      to_name: "Better Giving",
+      to_name: "Offeria",
     };
     const x: donation_receipt.IData = {
       ...don,

@@ -16,20 +16,20 @@ export default function TermsNonprofits() {
     <div className="xl:container xl:mx-auto px-5 prose lg:prose-lg py-20">
       <i className="text-gray text-right block">Effective October 25, 2024</i>
       <h2 className="text-center">
-        <span className="block">Better Giving</span>
+        <span className="block">Offeria</span>
         <span className="block">Nonprofit Organization</span>
         <span>Terms of Use</span>
       </h2>
 
       <p>
         These Terms of Use (the “<b>Terms</b>”) are a binding contract (“
-        <b>Agreement</b>”) by and between you and Better Giving, Inc. (“
-        <b>Better Giving</b>,” “<b>we</b>,” “<b>us</b>,” or “<b>our</b>”).
-        Better Giving is a public charity recognized by the Internal Revenue
-        Service (the “<b>IRS</b>”) under Section 501(c)(3) of the Internal
-        Revenue Code (Federal Tax ID # 87-3758939). Better Giving provides and
-        offers a charitable giving platform (the “<b>Platform</b>”) through
-        which we accept and receive charitable contributions from donors (“
+        <b>Agreement</b>”) by and between you and Offeria, Inc. (“
+        <b>Offeria</b>,” “<b>we</b>,” “<b>us</b>,” or “<b>our</b>”). Offeria is
+        a public charity recognized by the Internal Revenue Service (the “
+        <b>IRS</b>”) under Section 501(c)(3) of the Internal Revenue Code
+        (Federal Tax ID # 87-3758939). Offeria provides and offers a charitable
+        giving platform (the “<b>Platform</b>”) through which we accept and
+        receive charitable contributions from donors (“
         <b>Donors</b>”) and make grants to qualified participating nonprofit
         organizations (“<b>NPOs</b>”, “<b>you</b>” or “<b>your</b>”) to advance
         their charitable missions. The Platform enables Donors to make donations
@@ -38,15 +38,15 @@ export default function TermsNonprofits() {
       </p>
 
       <p>
-        In furtherance of its charitable mission, Better Giving (1) receives
-        donations from Donors and makes follow-on grants to NPOs based upon
-        Donor recommendations; (2) provides fiscal sponsorship services to
-        qualifying NPOs, and accepts donations and grants on their behalf; and
-        (3) maintains and manages a board designated endowment fund (or
+        In furtherance of its charitable mission, Offeria (1) receives donations
+        from Donors and makes follow-on grants to NPOs based upon Donor
+        recommendations; (2) provides fiscal sponsorship services to qualifying
+        NPOs, and accepts donations and grants on their behalf; and (3)
+        maintains and manages a board designated endowment fund (or
         quasi-endowment) (hereinafter the “<b>Fund</b>”) to support NPOs with
-        sustainable grant funding, at Better Giving’s sole discretion. Please
-        read this Agreement carefully as these Terms explain our commitments to
-        you and our requirements of you as a NPO.
+        sustainable grant funding, at Offeria's sole discretion. Please read
+        this Agreement carefully as these Terms explain our commitments to you
+        and our requirements of you as a NPO.
       </p>
 
       <p>
@@ -85,7 +85,7 @@ export default function TermsNonprofits() {
         The headings and subheadings are for reference only and do not limit the
         terms or application of the applicable section. Your trust is very
         important to us. If you have questions about this Agreement please
-        contact, hi@better.giving.
+        contact, hi@offeria.org.
       </p>
 
       <ol type="1">
@@ -94,27 +94,27 @@ export default function TermsNonprofits() {
           <ol type="a">
             <li>
               We register vetted NPOs and provide information about them to
-              Donors that are interested in donating assets to Better Giving and
+              Donors that are interested in donating assets to Offeria and
               disburse grants to NPOs based on grant recommendations made by
               Donors.
             </li>
             <li>
               We accept unrestricted donations of fiat currency, securities,
               cryptocurrency and digital assets to make grants to NPOs. When
-              Donors donate to Better Giving, they may recommend a specific
-              qualified NPO to support with their donation to Better Giving.
-              Donors may make a one-time donation or recurring donations to
-              support your organization.{" "}
+              Donors donate to Offeria, they may recommend a specific qualified
+              NPO to support with their donation to Offeria. Donors may make a
+              one-time donation or recurring donations to support your
+              organization.{" "}
               <U>
-                Better Giving retains the ultimate authority and discretion to
-                approve and disburse any grants in accordance with this
-                Agreement and any applicable laws and regulations.
+                Offeria retains the ultimate authority and discretion to approve
+                and disburse any grants in accordance with this Agreement and
+                any applicable laws and regulations.
               </U>
             </li>
             <li>
               {" "}
               As an NPO on the Platform, you have the ability to make investment
-              recommendations for the donations contributed to Better Giving to
+              recommendations for the donations contributed to Offeria to
               support your organization. You may make recommendations from the
               following options, or any combination thereof.
               <ol type="1">
@@ -123,7 +123,7 @@ export default function TermsNonprofits() {
                     <i>Immediate Grant (“Grant”)</i>
                   </U>
                   . Donations allocated for Grant are granted to the NPO on a
-                  monthly basis at the discretion of Better Giving.
+                  monthly basis at the discretion of Offeria.
                 </li>
                 <li>
                   <U>
@@ -131,34 +131,32 @@ export default function TermsNonprofits() {
                   </U>
                   . Donations allocated to Savings are maintained in a
                   money-market account to accrue interest until the NPO makes a
-                  grant request (“Withdrawal”) to Better Giving. Unless a
-                  different investment recommendation is made by you, all
-                  donations are automatically allocated to Savings. Any
-                  Withdrawal requests are reviewed and processed on a monthly
-                  basis.
+                  grant request (“Withdrawal”) to Offeria. Unless a different
+                  investment recommendation is made by you, all donations are
+                  automatically allocated to Savings. Any Withdrawal requests
+                  are reviewed and processed on a monthly basis.
                 </li>
                 <li>
                   <U>
                     <i>Sustainability Fund (“Investment”).</i>
                   </U>
                   . Donations allocated to Investment are maintained in the
-                  Better Giving Sustainability Fund and are invested per Better
-                  Giving’s Investment Policy. Assets in the Fund are
-                  unrestricted contributions and per the Investment Policy both
-                  principal and income are maintained in the Fund and are
-                  available for expenditure by Better Giving. Although we view
-                  contributions in the Fund as long-term investments with
-                  principal remaining intact to support NPO’s in furtherance of
-                  our mission, we also believe in your right to organizational
-                  autonomy and allow for Withdrawal at the discretion of Better
-                  Giving. Any Withdrawal requests are reviewed and processed on
-                  a monthly basis.
+                  Offeria Sustainability Fund and are invested per Offeria's
+                  Investment Policy. Assets in the Fund are unrestricted
+                  contributions and per the Investment Policy both principal and
+                  income are maintained in the Fund and are available for
+                  expenditure by Offeria. Although we view contributions in the
+                  Fund as long-term investments with principal remaining intact
+                  to support NPO’s in furtherance of our mission, we also
+                  believe in your right to organizational autonomy and allow for
+                  Withdrawal at the discretion of Offeria. Any Withdrawal
+                  requests are reviewed and processed on a monthly basis.
                 </li>
               </ol>
             </li>
             <li>
               We facilitate the issuance of tax receipts showing the donation
-              transaction between the Donor and Better Giving. It is the sole
+              transaction between the Donor and Offeria. It is the sole
               responsibility of the Donor to ensure that their contribution
               qualifies for tax relief, if tax relief is sought, as permitted by
               applicable tax law.
@@ -193,13 +191,13 @@ export default function TermsNonprofits() {
                   regulatory and/or governmental agencies in your jurisdiction,
                   and that such recognition is not currently revoked. If you are
                   registered outside of the United States and wish to receive
-                  grants from Better Giving, you are required to enter into and
-                  comply with the terms and conditions of the Fiscal Sponsorship
-                  and Grant Agreement, which is incorporated by reference
-                  herein. In the event that there is any conflict between this
-                  Agreement and any term or condition in the Fiscal Sponsorship
-                  and Grant Agreement, the Fiscal Sponsorship and Grant
-                  Agreement shall control.
+                  grants from Offeria, you are required to enter into and comply
+                  with the terms and conditions of the Fiscal Sponsorship and
+                  Grant Agreement, which is incorporated by reference herein. In
+                  the event that there is any conflict between this Agreement
+                  and any term or condition in the Fiscal Sponsorship and Grant
+                  Agreement, the Fiscal Sponsorship and Grant Agreement shall
+                  control.
                 </li>
                 <li>
                   You must promptly update and notify us in case of any changes
@@ -257,7 +255,7 @@ export default function TermsNonprofits() {
                 </li>
                 <li>A valid, working email address; and</li>
                 <li>
-                  Completion of the Better Giving registration form and process.
+                  Completion of the Offeria registration form and process.
                 </li>
               </ol>
             </li>
@@ -277,10 +275,10 @@ export default function TermsNonprofits() {
           <h3>Your Obligations</h3>
           <ol type="a">
             <li>
-              You hereby grant Better Giving a non-exclusive license to use your
-              name and logo during the term of this Agreement. We acknowledge
-              that you retain ownership of your trademarks, trade names and
-              service marks and any associated goodwill.
+              You hereby grant Offeria a non-exclusive license to use your name
+              and logo during the term of this Agreement. We acknowledge that
+              you retain ownership of your trademarks, trade names and service
+              marks and any associated goodwill.
             </li>
             <li>
               NPOs bear sole responsibility for complying with all laws, rules
@@ -291,33 +289,33 @@ export default function TermsNonprofits() {
               failure to register properly. You agree to bear all costs
               associated with your compliance with such requirements. You agree
               that, for purposes of state charitable solicitation laws or
-              regulations, nothing in this Agreement is intended to cause Better
-              Giving in any way to act as a professional fundraiser or
+              regulations, nothing in this Agreement is intended to cause
+              Offeria in any way to act as a professional fundraiser or
               fundraising counsel on your behalf.
             </li>
             <li>
-              You hereby agree to promptly notify Better Giving in the event
-              there is any change to your status as a NPO, or ability to carry
-              out the charitable purposes for which you have received grant
+              You hereby agree to promptly notify Offeria in the event there is
+              any change to your status as a NPO, or ability to carry out the
+              charitable purposes for which you have received grant
               disbursements.
             </li>
           </ol>
         </li>
         <li>
-          <h3>Receiving Grants from Better Giving</h3>
+          <h3>Receiving Grants from Offeria</h3>
           <ol type="a">
             <li>
               You acknowledge that we make no promise that you will receive any
               grants from us as a result of your status as a NPO.
             </li>
             <li>
-              You understand that Donors make their donations to Better Giving
-              and not to NPOs. Better Giving retains exclusive legal control
-              over all donations received from Donors, and exercises sole
-              discretion in making any and all grants to NPOs. We make grant
-              distributions to qualified NPOs based upon recommendations made by
-              Donors, and consequently any grants received in accordance with
-              this Agreement will be received by you from Better Giving.
+              You understand that Donors make their donations to Offeria and not
+              to NPOs. Offeria retains exclusive legal control over all
+              donations received from Donors, and exercises sole discretion in
+              making any and all grants to NPOs. We make grant distributions to
+              qualified NPOs based upon recommendations made by Donors, and
+              consequently any grants received in accordance with this Agreement
+              will be received by you from Offeria.
             </li>
             <li>
               Pursuant to our{" "}
@@ -337,46 +335,46 @@ export default function TermsNonprofits() {
             </li>
             <li>
               On an ongoing basis, all grant recommendations made by Donors are
-              reviewed and approved by Better Giving. All grant disbursements we
-              may make to you, will be made by direct bank transfer. As a
-              condition of receiving grants in accordance with the Agreement,
-              you hereby represent and warrant that all bank account information
-              provided to Better Giving pertains to bank account(s) held solely
-              in the name of your NPO, and managed and maintained by duly
-              authorized legal representatives in accordance with any and all
-              applicable state, federal and national laws.
+              reviewed and approved by Offeria. All grant disbursements we may
+              make to you, will be made by direct bank transfer. As a condition
+              of receiving grants in accordance with the Agreement, you hereby
+              represent and warrant that all bank account information provided
+              to Offeria pertains to bank account(s) held solely in the name of
+              your NPO, and managed and maintained by duly authorized legal
+              representatives in accordance with any and all applicable state,
+              federal and national laws.
             </li>
             <li>
-              All grant disbursements made by Better Giving to you may only be
-              used for charitable purposes in accordance with any and all
-              applicable local, state, federal or national laws. Such donations
-              may not confer impermissible private benefit(s), and may also not
-              be used to engage in, support, or promote hate, violence,
-              terrorist activity, related training of any kind, money
-              laundering, or other illegal activities, or be used for any
-              impermissible political activities.
+              All grant disbursements made by Offeria to you may only be used
+              for charitable purposes in accordance with any and all applicable
+              local, state, federal or national laws. Such donations may not
+              confer impermissible private benefit(s), and may also not be used
+              to engage in, support, or promote hate, violence, terrorist
+              activity, related training of any kind, money laundering, or other
+              illegal activities, or be used for any impermissible political
+              activities.
             </li>
             <li>
               In the event you lose your status as an NPO, cease your charitable
-              operations or breach these Terms, Better Giving, in its sole
-              discretion may select another NPO to receive any grants or use the
+              operations or breach these Terms, Offeria, in its sole discretion
+              may select another NPO to receive any grants or use the
               donation(s) in any manner consistent with our charitable purpose.
             </li>
             <li>
-              <b>Fees:</b> Use of the Platform as well as Better Giving’s
-              services are free for NPOs. We do not charge you a fee for
-              registering on the Platform nor for receiving grants from Better
-              Giving. There are no hidden fees or recurring charges.
+              <b>Fees:</b> Use of the Platform as well as Offeria's services are
+              free for NPOs. We do not charge you a fee for registering on the
+              Platform nor for receiving grants from Offeria. There are no
+              hidden fees or recurring charges.
               <ol>
                 <li>
-                  <U>Fund Management Fees</U>. Better Giving maintains a fee
-                  structure for the operation and maintenance of the Fund, as
-                  follows: (1) Assets Under Management Fee assessed quarterly
-                  equal to .2125% of the Fund balance, 0.85% annually; and (2)
-                  Annual Performance Fee equal to 12.5% over a 5% hurdle rate.
+                  <U>Fund Management Fees</U>. Offeria maintains a fee structure
+                  for the operation and maintenance of the Fund, as follows: (1)
+                  Assets Under Management Fee assessed quarterly equal to .2125%
+                  of the Fund balance, 0.85% annually; and (2) Annual
+                  Performance Fee equal to 12.5% over a 5% hurdle rate.
                 </li>
                 <li>
-                  <U>Savings Management Fees</U>: Better Giving maintains a fee
+                  <U>Savings Management Fees</U>: Offeria maintains a fee
                   structure for the operation and maintenance of Savings, as
                   follows: (1) Assets Under Management Fee assessed quarterly
                   equal to 0.2125% of the Savings balance, 0.85% annually. This
@@ -385,17 +383,16 @@ export default function TermsNonprofits() {
                 </li>
                 <li>
                   <U>Donor Fees</U>. NPOs may elect to have Donor Fees set as
-                  either (1) an optional donation to Better Giving at the
-                  Donor’s sole discretion; or (2) a flat 1.5% fee on all
-                  donations made.
+                  either (1) an optional donation to Offeria at the Donor’s sole
+                  discretion; or (2) a flat 1.5% fee on all donations made.
                 </li>
                 <li>
-                  <U>Better Giving Alliance and Grant Procurement Fees</U>: On
-                  occasion, Better Giving provides special services including:
-                  (1) launching exclusive fundraisers with partner organizations
-                  (2) seeking grant funding on behalf of our Fiscally Sponsored
-                  NPOs. For these efforts, Better Giving assesses a 2.9% flat
-                  fee on all donations made.
+                  <U>Offeria Alliance and Grant Procurement Fees</U>: On
+                  occasion, Offeria provides special services including: (1)
+                  launching exclusive fundraisers with partner organizations (2)
+                  seeking grant funding on behalf of our Fiscally Sponsored
+                  NPOs. For these efforts, Offeria assesses a 2.9% flat fee on
+                  all donations made.
                 </li>
               </ol>
             </li>
@@ -408,24 +405,24 @@ export default function TermsNonprofits() {
               a. You represent and warrant to us that: (i) you are, and at all
               times during the term of this Agreement will remain, a eligible
               NPO as described in Section 2(a); (ii) you will utilize grants
-              received from Better Giving solely in a manner that is consistent
-              with such status; (iii) you will at all times be in compliance
-              with all applicable laws, rules and regulations, including any
-              requirements governing charitable status and solicitation of
-              charitable donations in your jurisdiction; (iv) all information
-              you have provided to us is true and accurate at all times; (v) you
-              have the right to enter into this Agreement on behalf of your
-              organization; (vi) you have the right to grant the licenses to
-              Better Giving hereunder; and our use, as contemplated by this
-              Agreement, of materials or rights licensed hereunder, will not
-              infringe the intellectual property rights or similar rights of any
-              third party; (vii) you will at all times comply with the terms and
-              conditions of this Agreement.
+              received from Offeria solely in a manner that is consistent with
+              such status; (iii) you will at all times be in compliance with all
+              applicable laws, rules and regulations, including any requirements
+              governing charitable status and solicitation of charitable
+              donations in your jurisdiction; (iv) all information you have
+              provided to us is true and accurate at all times; (v) you have the
+              right to enter into this Agreement on behalf of your organization;
+              (vi) you have the right to grant the licenses to Offeria
+              hereunder; and our use, as contemplated by this Agreement, of
+              materials or rights licensed hereunder, will not infringe the
+              intellectual property rights or similar rights of any third party;
+              (vii) you will at all times comply with the terms and conditions
+              of this Agreement.
             </li>
             <li>
               You agree and acknowledge that all Donors who make grant
               recommendations to support you have not and will receive any goods
-              or services of value in return of their Donation to Better Giving,
+              or services of value in return of their Donation to Offeria,
               except where such goods or services are disregarded in accordance
               with guidance provided by the Internal Revenue Service.
             </li>
@@ -454,21 +451,21 @@ export default function TermsNonprofits() {
             </li>
             <li>
               You agree to indemnify, hold harmless, and, at our option, defend
-              Better Giving and its directors, employees, licensees, agents and
+              Offeria and its directors, employees, licensees, agents and
               vendors from and against all claims, costs, losses, damages,
               expenses (including attorneys’ fees and court costs) and
               liabilities arising from your breach or alleged breach of any
               obligation, covenant, representation or warranty under this
-              Agreement. If Better Giving requires you to provide defense of any
-              matter for which indemnity is or may be due hereunder, Better
-              Giving may participate in such defense by counsel of its choice at
-              its own expense. You will not settle any claim for which indemnity
-              is due hereunder unless such settlement completely and forever
-              releases Better Giving and the other indemnified parties with
-              respect to such claim, or unless Better Giving provides its prior
-              written consent. Any settlement imposing or requiring Better
-              Giving to take or refrain from taking any action will require the
-              prior written consent of Better Giving.
+              Agreement. If Offeria requires you to provide defense of any
+              matter for which indemnity is or may be due hereunder, Offeria may
+              participate in such defense by counsel of its choice at its own
+              expense. You will not settle any claim for which indemnity is due
+              hereunder unless such settlement completely and forever releases
+              Offeria and the other indemnified parties with respect to such
+              claim, or unless Offeria provides its prior written consent. Any
+              settlement imposing or requiring Offeria to take or refrain from
+              taking any action will require the prior written consent of
+              Offeria.
             </li>
             <li>
               YOU ACKNOWLEDGE THAT THE PLATFORM AND OUR PERFORMANCE HEREUNDER
@@ -531,14 +528,14 @@ export default function TermsNonprofits() {
               DIFFERENT.
             </li>
             <li>
-              YOU ACKNOWLEDGE THAT ANY PAST PERFORMANCE OF BETTER GIVING’S
-              SAVINGS AND SUSTAINABILITY FUND INVESTMENTS MAY NOT BE INDICATIVE
-              OF FUTURE RESULTS. DIFFERENT TYPES OF INVESTMENTS MADE BY BETTER
-              GIVING INVOLVE VARYING DEGREES OF RISK, AND THERE CAN BE NO
-              ASSURANCE THAT THE FUTURE PERFORMANCE OF ANY SPECIFIC INVESTMENT
-              OR INVESTMENT STRATEGY MADE REFERENCE TO IN OUR INVESTMENT POLICY
-              WILL BE PROFITABLE OR EQUAL ANY CORRESPONDING HISTORICAL
-              PERFORMANCE LEVEL(S).
+              YOU ACKNOWLEDGE THAT ANY PAST PERFORMANCE OF OFFERIA'S SAVINGS AND
+              SUSTAINABILITY FUND INVESTMENTS MAY NOT BE INDICATIVE OF FUTURE
+              RESULTS. DIFFERENT TYPES OF INVESTMENTS MADE BY OFFERIA INVOLVE
+              VARYING DEGREES OF RISK, AND THERE CAN BE NO ASSURANCE THAT THE
+              FUTURE PERFORMANCE OF ANY SPECIFIC INVESTMENT OR INVESTMENT
+              STRATEGY MADE REFERENCE TO IN OUR INVESTMENT POLICY WILL BE
+              PROFITABLE OR EQUAL ANY CORRESPONDING HISTORICAL PERFORMANCE
+              LEVEL(S).
             </li>
           </ol>
         </li>
@@ -551,9 +548,9 @@ export default function TermsNonprofits() {
         </li>
         <li>
           <h3 className="inline">No Professional Advice.</h3> All information
-          provided by Better Giving and the Platform is for informational
-          purposes only and should not be construed as professional advice.
-          Before accepting these Terms and using the Platform, you should seek
+          provided by Offeria and the Platform is for informational purposes
+          only and should not be construed as professional advice. Before
+          accepting these Terms and using the Platform, you should seek
           independent professional advice from an individual who is licensed and
           qualified in the area for which such advice would be appropriate. We
           do not offer any tax, accounting or legal advice. Please consider
@@ -572,24 +569,23 @@ export default function TermsNonprofits() {
             </li>
             <li>
               This Agreement may be terminated at any time by either you or
-              Better Giving, with or without cause, with notice provided by one
-              party to the other.
+              Offeria, with or without cause, with notice provided by one party
+              to the other.
             </li>
             <li>
               Upon termination, we will deactivate the donation function to your
               NPO on the Platform, as well as on any donation widgets and Donors
-              will no longer be able to donate to you. Better Giving will,
-              subject to the terms and conditions of this Agreement, grant any
-              donations made to you up until the date of termination.
+              will no longer be able to donate to you. Offeria will, subject to
+              the terms and conditions of this Agreement, grant any donations
+              made to you up until the date of termination.
             </li>
             <li>
-              Once this Agreement is terminated, Better Giving will no longer
-              disburse any grants to you from the Fund, as of the date of
-              termination.
+              Once this Agreement is terminated, Offeria will no longer disburse
+              any grants to you from the Fund, as of the date of termination.
             </li>
             <li>
-              Neither you nor Better Giving shall have any obligation to each
-              other following the termination of this Agreement, except those
+              Neither you nor Offeria shall have any obligation to each other
+              following the termination of this Agreement, except those
               obligations that survive this Agreement, as set forth in Section
               9(e).
             </li>
@@ -665,21 +661,20 @@ export default function TermsNonprofits() {
               may be available to us in law or equity.
             </li>
             <li>
-              <U>Dispute Resolution</U>. Any dispute between you and Better
-              Giving which cannot be resolved by negotiation shall be submitted
-              to mediation or arbitration, under the rules of the American
+              <U>Dispute Resolution</U>. Any dispute between you and Offeria
+              which cannot be resolved by negotiation shall be submitted to
+              mediation or arbitration, under the rules of the American
               Arbitration Association (“<b>AAA</b>”) or any entity that you and
               we may subsequently agree upon in writing. Any arbitration award
               issued by the arbitrator shall be final, binding, and enforceable
               in any court of competent jurisdiction. Notwithstanding the
               foregoing, you acknowledge that unauthorized use of our
               proprietary materials, information or technology may cause
-              irreparable harm to Better Giving for which monetary damages would
-              be an inadequate remedy. Accordingly, we have the right, without
-              the necessity of posting bond, to seek injunctive or other
-              equitable relief from any court of competent jurisdiction to
-              protect our rights in intellectual property or confidential
-              information.
+              irreparable harm to Offeria for which monetary damages would be an
+              inadequate remedy. Accordingly, we have the right, without the
+              necessity of posting bond, to seek injunctive or other equitable
+              relief from any court of competent jurisdiction to protect our
+              rights in intellectual property or confidential information.
             </li>
             <li>
               <U>Governing Law.</U> This Agreement will be governed by and

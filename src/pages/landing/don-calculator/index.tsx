@@ -5,10 +5,10 @@ import { metas } from "#/helpers/seo";
 import { Top } from "./top";
 export const meta: MetaFunction = () =>
   metas({
-    title: "You’re Losing Donations - Find Out How Much | Better Giving",
+    title: "You're Losing Donations - Find Out How Much | Offeria",
     description:
-      "Don’t let lost fees, idle cash, and missed gifts drain your nonprofit’s revenue. Use the free Better Giving Donation Calculator to see what you’re missing in under a minute.",
-    url: "https://better.giving/see-what-youre-losing",
+      "Don't let lost fees, idle cash, and missed gifts drain your nonprofit's revenue. Use the free Offeria Donation Calculator to see what you're missing in under a minute.",
+    url: "https://offeria.org/see-what-youre-losing",
   });
 export default function Component() {
   return (

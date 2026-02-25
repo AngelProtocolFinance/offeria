@@ -36,8 +36,8 @@ export function Allocation(props: Props) {
               <Tooltip
                 tip={
                   <Content className="max-w-xs bg-gray-d4 p-4 text-gray-l4 text-sm shadow-lg rounded-lg">
-                    Donations received through Better Giving that will
-                    distributed to your bank account.
+                    Donations received through Offeria that will distributed to
+                    your bank account.
                     <Arrow />
                   </Content>
                 }

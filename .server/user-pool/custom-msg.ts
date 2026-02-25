@@ -22,7 +22,7 @@ export const handler: CustomMessageTriggerHandler = async (event) => {
         code,
       });
       const html = await render(node);
-      response.emailSubject = "Verify your Better Giving account";
+      response.emailSubject = "Verify your Offeria account";
       response.emailMessage = html;
       break;
     }
@@ -33,7 +33,7 @@ export const handler: CustomMessageTriggerHandler = async (event) => {
         code,
       });
       const html = await render(node);
-      response.emailSubject = "Verify your Better Giving account";
+      response.emailSubject = "Verify your Offeria account";
       response.emailMessage = html;
       break;
     }
@@ -44,7 +44,7 @@ export const handler: CustomMessageTriggerHandler = async (event) => {
         code,
       });
       const html = await render(node);
-      response.emailSubject = "Verify your Better Giving account";
+      response.emailSubject = "Verify your Offeria account";
       response.emailMessage = html;
       break;
     }

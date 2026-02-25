@@ -27,7 +27,7 @@ export const meta: Route.MetaFunction = ({ loaderData: d }) => {
   return metas({
     title: `Donation to ${d.to_name}`,
     image: laira_gift,
-    description: `I just donated to ${d.to_name} on Better Giving! ${d && d.to_type === "fund" ? "My gift to this fundraiser helps raise funds for causes they love. Why don't you donate as well?" : "They can choose to use my gift today, or save and invest it for sustainable growth"}. When you give today, you give forever.`,
+    description: `I just donated to ${d.to_name} on Offeria! ${d && d.to_type === "fund" ? "My gift to this fundraiser helps raise funds for causes they love. Why don't you donate as well?" : "They can choose to use my gift today, or save and invest it for sustainable growth"}. When you give today, you give forever.`,
     url: d.donate_url,
   });
 };

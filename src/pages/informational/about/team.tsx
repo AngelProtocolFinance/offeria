@@ -19,7 +19,7 @@ const members: IMember[] = [
     title: "Content and Partnership Manager",
     socials: {
       linkedin: "https://www.linkedin.com/in/brylle-gutierrez-b03188340/",
-      email: "mailto:brylle@better.giving",
+      email: "mailto:brylle@offeria.org",
     },
     image: brylle,
     bio: [
@@ -33,12 +33,12 @@ const members: IMember[] = [
     title: "Executive Director",
     socials: {
       linkedin: "https://www.linkedin.com/in/chauncey-st-john",
-      email: "mailto:chauncey@better.giving",
+      email: "mailto:chauncey@offeria.org",
     },
     image: chauncey,
     bio: [
-      "Chauncey St. John is the founder and executive director of Better Giving, a platform designed to empower nonprofits with free tools to fundraise, save, and invest. With a mission to simplify financial sustainability, Better Giving has helped over 180 nonprofits globally, raising more than $6 million in donations while reducing administrative burdens.",
-      "Previously, Chauncey pioneered a blockchain-based fundraising platform named Angel Protocol that processed crypto donations and evolved into Better Giving’s current one-stop solution. He also founded the Better Giving Alliance, uniting over 125 projects to raise millions for charity through innovative, mission-driven partnerships.",
+      "Chauncey St. John is the founder and executive director of Offeria, a platform designed to empower nonprofits with free tools to fundraise, save, and invest. With a mission to simplify financial sustainability, Offeria has helped over 180 nonprofits globally, raising more than $6 million in donations while reducing administrative burdens.",
+      "Previously, Chauncey pioneered a blockchain-based fundraising platform named Angel Protocol that processed crypto donations and evolved into Offeria’s current one-stop solution. He also founded the Offeria Alliance, uniting over 125 projects to raise millions for charity through innovative, mission-driven partnerships.",
       "With over a decade of experience leading global operations at GE, Chauncey brings a wealth of expertise in streamlining processes and driving impact through innovation. His work reflects a deep commitment to creating financial self-sufficiency for nonprofits, ensuring they have the tools to thrive in an increasingly complex world.",
     ],
   },
@@ -48,7 +48,7 @@ const members: IMember[] = [
     title: "Customer Success and Outreach Manager",
     socials: {
       linkedin: "https://www.linkedin.com/in/dianne-agbada-22ab63340/",
-      email: "mailto:dianne@better.giving",
+      email: "mailto:dianne@offeria.org",
     },
     image: dianne,
     bio: [
@@ -62,7 +62,7 @@ const members: IMember[] = [
     title: "Digital Marketing and Media Manager",
     socials: {
       linkedin: "https://www.linkedin.com/in/jmvelascoph/",
-      email: "mailto:john@better.giving",
+      email: "mailto:john@offeria.org",
     },
     image: john,
     bio: [
@@ -76,7 +76,7 @@ const members: IMember[] = [
     title: "Chief Technical Officer",
     socials: {
       github: "https://github.com/ap-justin",
-      email: "mailto:justin@better.giving",
+      email: "mailto:justin@offeria.org",
     },
     image: justin,
     bio: [
@@ -90,11 +90,11 @@ const members: IMember[] = [
     title: "Chief Legal Officer",
     socials: {
       linkedin: "https://www.linkedin.com/in/pallav-vora-b74524123",
-      email: "mailto:pallav@better.giving",
+      email: "mailto:pallav@offeria.org",
     },
     image: pallav,
     bio: [
-      "Pallav is an experienced in-house attorney with over 12 years of experience working in the nonprofit, impact investing and social enterprise sectors. At Better Giving, he provides strategic legal guidance and governance oversight to support the organization's mission of empowering effective philanthropy.",
+      "Pallav is an experienced in-house attorney with over 12 years of experience working in the nonprofit, impact investing and social enterprise sectors. At Offeria, he provides strategic legal guidance and governance oversight to support the organization's mission of empowering effective philanthropy.",
     ],
   },
   {
@@ -103,12 +103,12 @@ const members: IMember[] = [
     title: "Chief Financial Officer",
     socials: {
       linkedin: "https://www.linkedin.com/in/shaun-robinson",
-      email: "mailto:shaun@better.giving",
+      email: "mailto:shaun@offeria.org",
     },
     image: shaun,
     bio: [
       "Shaun has been in the nonprofit space for over 10 years. Blending experiences across a range of impact projects from international financing, to implementation, and monitoring and evaluation, Shaun resonates with the challenges many nonprofits face.",
-      "His personal interestes in blockchain technology and decentralized finance have intersected nicely with his role at Better Giving as he works to build our own internal resilience, while providing best in class financial pathways to the nonprofits we partner with.",
+      "His personal interestes in blockchain technology and decentralized finance have intersected nicely with his role at Offeria as he works to build our own internal resilience, while providing best in class financial pathways to the nonprofits we partner with.",
     ],
   },
   {
@@ -117,7 +117,7 @@ const members: IMember[] = [
     title: "Chief Operating Officer",
     socials: {
       linkedin: "https://www.linkedin.com/in/timstirrup",
-      email: "mailto:tim@better.giving",
+      email: "mailto:tim@offeria.org",
     },
     image: tim,
     bio: [

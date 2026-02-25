@@ -101,7 +101,7 @@ export function DonorStep({ classes = "", on_change, value }: Props) {
         {...register("company_name")}
         error={errors.email?.message}
         classes={{ label: "font-semibold" }}
-        placeholder="e.g. Better Giving"
+        placeholder="e.g. Offeria"
       />
 
       {don.recipient.donor_address_required && (

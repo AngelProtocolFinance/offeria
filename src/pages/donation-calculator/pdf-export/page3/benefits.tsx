@@ -6,7 +6,7 @@ export function Benefits() {
     {
       title: "80% Donor Fee Coverage",
       description:
-        "Better Giving enables all donors to cover processing fees, and our data shows 80% opt to do so.",
+        "Offeria enables all donors to cover processing fees, and our data shows 80% opt to do so.",
     },
     {
       title: "All Donation Types",
@@ -16,7 +16,7 @@ export function Benefits() {
     {
       title: "Lower Processing Fees",
       description:
-        "Better Giving doesn't charge any processing fees, but the third-party services we utilize charge an average rate of 2% (reduced to less than 0.5% with donor coverage)",
+        "Offeria doesn't charge any processing fees, but the third-party services we utilize charge an average rate of 2% (reduced to less than 0.5% with donor coverage)",
     },
     {
       title: "Automated Investments",
@@ -35,7 +35,7 @@ export function Benefits() {
           color: blue.d,
         }}
       >
-        Better Giving Benefits
+        Offeria Benefits
       </T>
 
       {benefits.map((benefit, index) => (

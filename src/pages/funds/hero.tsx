@@ -11,7 +11,7 @@ export default function Hero({ classes = "" }: { classes?: string }) {
           Raise Funds. Fuel Impact
         </p>
         <h1 className="text-white mb-4 capitalize text-center text-2xl lg:text-4xl text-pretty lg:text-left">
-          Fundraising, The&nbsp;Better&nbsp;Giving Way
+          Fundraising, The&nbsp;Offeria Way
         </h1>
 
         <p className="text-white text-xl lg:text-2xl max-lg:text-center text-balance ">

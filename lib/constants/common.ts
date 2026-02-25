@@ -1,3 +1,4 @@
+import { domain } from "@/constants";
 import type { IAllocation } from "@/donation/schema";
 import type { IIncrement } from "@/schemas";
 
@@ -32,10 +33,10 @@ export const logo_url = (path: string, custom = false) =>
   custom ? path : `https://nowpayments.io${path}`;
 
 export const emails = {
-  tim: "tim@better.giving",
-  jms: "justin@better.giving",
-  chauncey: "chauncey@better.giving",
-  hi: "hi@better.giving",
+  tim: `tim@${domain}`,
+  jms: `justin@${domain}`,
+  chauncey: `chauncey@${domain}`,
+  hi: `hi@${domain}`,
 };
 
 export const GENERIC_ERROR_MESSAGE = `An unexpected error occurred and has been reported. Please get in touch with ${emails.hi} if the problem persists.`;

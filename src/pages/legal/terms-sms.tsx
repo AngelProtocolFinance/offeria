@@ -27,8 +27,7 @@ export default function TermsSms() {
         <p>Using the format:</p>
         <pre>[NONPROFIT] GIVE [AMOUNT]</pre>
         <p>
-          For example: <code>BETTERGIVING GIVE 50</code> to donate $50 to{" "}
-          {APP_NAME}.
+          For example: <code>OFFERIA GIVE 50</code> to donate $50 to {APP_NAME}.
         </p>
       </section>
 
@@ -103,8 +102,7 @@ export default function TermsSms() {
           us:
         </p>
         <address>
-          Email:{" "}
-          <a href="mailto:support@better.giving">support@better.giving</a>
+          Email: <a href="mailto:support@offeria.org">support@offeria.org</a>
         </address>
       </section>
 

@@ -64,7 +64,7 @@ export default function WpPlugin() {
             number, you can easily locate by navigating to the Marketplace and
             searching for your nonprofit by name. The account number is found at
             the end of the link to your profile on it's marketplace card (ex:
-            https://better.giving/marketplace/121).
+            https://offeria.org/marketplace/121).
           </span>
         </div>
         <div className="py-5">

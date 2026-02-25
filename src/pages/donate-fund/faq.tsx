@@ -56,19 +56,19 @@ const faqs = (_: number) => [
     question: "How does my donation work to benefit nonprofits?",
     paragraphs: [
       <p>
-        Donations are made to Altruistic Partners Empowering Society, DBA Better
-        Giving, a registered charitable 501(c)(3) (EIN 87-3758939).
+        Donations are made to Altruistic Partners Empowering Society, DBA
+        Offeria, a registered charitable 501(c)(3) (EIN 87-3758939).
       </p>,
       <p>
-        <Em intensity={2}>For immediate donations</Em>, Better Giving grants out
-        the donations to the chosen nonprofit on a weekly basis.
+        <Em intensity={2}>For immediate donations</Em>, Offeria grants out the
+        donations to the chosen nonprofit on a weekly basis.
       </p>,
       <p>
         <Em intensity={2}>For Sustainability Fund donations</Em>, these are
-        invested as a Board Managed quasi-endowment, and Better Giving grants
-        out 75% of the yield every quarter to the nonprofit, investing the other
-        25% of the yield into the sustainability fund to mitigate against such
-        as inflation. In this way, donors can give today, but see the impact
+        invested as a Board Managed quasi-endowment, and Offeria grants out 75%
+        of the yield every quarter to the nonprofit, investing the other 25% of
+        the yield into the sustainability fund to mitigate against such as
+        inflation. In this way, donors can give today, but see the impact
         continue into the future.
       </p>,
     ],
@@ -102,12 +102,12 @@ const faqs = (_: number) => [
   },
   {
     id: 3,
-    question: "How much does Better Giving charge?",
+    question: "How much does Offeria charge?",
     paragraphs: [
       <p>
-        It is free to set up and use a Better Giving account. No subscriptions.
-        No upfront costs. No platform fees (unless a nonprofit has opted out of
-        offering donors a voluntary donation to Better Giving).
+        It is free to set up and use a Offeria account. No subscriptions. No
+        upfront costs. No platform fees (unless a nonprofit has opted out of
+        offering donors a voluntary donation to Offeria).
       </p>,
       <p>Payment processing fees from 3rd parties may apply.</p>,
     ],
@@ -134,8 +134,8 @@ const faqs = (_: number) => [
         memo.
       </p>,
       <p>
-        If you would like to add a contribution for Better Giving to help keep
-        our services free, you may add that in the memo with{" "}
+        If you would like to add a contribution for Offeria to help keep our
+        services free, you may add that in the memo with{" "}
         <Em
           intensity={1}
           classes="text-gray-d4 text-xs font-mono bg-blue-l4 p-0.5"

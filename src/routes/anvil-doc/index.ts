@@ -12,7 +12,7 @@ export const loader: LoaderFunction = async ({ params: { eid } }) => {
     status: statusCode,
     headers: {
       "content-type": "application/zip",
-      "content-disposition": `attachment; filename="bettergiving-fs-ga.zip"`,
+      "content-disposition": `attachment; filename="offeria-fs-ga.zip"`,
     },
   });
 };

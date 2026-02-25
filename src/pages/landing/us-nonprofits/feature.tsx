@@ -44,7 +44,7 @@ export function Feature({ className = "" }) {
           Easy as 1-2-3
         </h2>
         <h3 className="max-lg:text-center text-3xl md:text-4.5xl text-balance mb-6 max-lg:px-4">
-          How Better Giving Works
+          How Offeria Works
         </h3>
         <p className="text-gray max-lg:px-10 max-lg:text-center mb-2 text-xl">
           Discover how easy it is to boost your nonprofit’s donations and

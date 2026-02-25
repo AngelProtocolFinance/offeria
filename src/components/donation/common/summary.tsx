@@ -62,7 +62,7 @@ export function Summary({ Amount, frequency = "one-time", ...props }: Props) {
         {tipValue > 0 && (
           <div className="col-span-full grid grid-cols-[1fr_auto] py-3">
             <dt className="mr-auto" aria-label="tip">
-              Donation for Better Giving
+              Donation for Offeria
             </dt>
             <Amount classes="text-sm" amount={tipValue} />
           </div>

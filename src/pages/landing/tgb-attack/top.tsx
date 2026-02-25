@@ -44,9 +44,9 @@ export const Top = ({ classes = "" }) => {
         </div>
         <p className="px-6 max-w-5xl mx-auto text-gray-d1 max-md:block md:text-2xl text-center text-pretty sm:text-balance">
           Why should your nonprofit lose funds to annual subscriptions and
-          platform fees? Better Giving ensures 100% of your donations go toward
-          your mission—no hidden fees, no unnecessary costs, just seamless
-          crypto, stock, and DAF giving.
+          platform fees? Offeria ensures 100% of your donations go toward your
+          mission—no hidden fees, no unnecessary costs, just seamless crypto,
+          stock, and DAF giving.
         </p>
         <div className="max-xl:hidden absolute right-28 top-1/3">
           <Image
@@ -79,7 +79,7 @@ export const Top = ({ classes = "" }) => {
           to={href("/register/welcome")}
           className="btn-blue ml-1 group active:translate-x-1 font-bold shadow-2xl inline-flex items-center px-10 py-3 gap-1 rounded-full text-lg "
         >
-          Join Better Giving Today!
+          Join Offeria Today!
           <ArrowRight size={18} className="group-hover:translate-x-1" />
         </Link>
 
