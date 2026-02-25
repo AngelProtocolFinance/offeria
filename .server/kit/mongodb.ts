@@ -5,14 +5,9 @@ import { MongoClient } from "mongodb";
 import { nvs_shared } from "../env";
 
 export const mongodb = new MongoClient(nvs_shared.mongodb.url);
-export const nonprofits = mongodb
-  .db("better-giving")
-  .collection<NonprofitItem>("nonprofits");
 
-export const funds_collection = mongodb
-  .db("better-giving")
-  .collection<IFundItem>("funds");
+const db = mongodb.db("offeria");
 
-export const npos_collection = mongodb
-  .db("better-giving")
-  .collection<INpoItem>("npos");
+export const nonprofits = db.collection<NonprofitItem>("nonprofits");
+export const funds_collection = db.collection<IFundItem>("funds");
+export const npos_collection = db.collection<INpoItem>("npos");

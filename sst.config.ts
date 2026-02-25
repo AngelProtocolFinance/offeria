@@ -5,11 +5,14 @@ const stage = {
 export default $config({
   app(input) {
     return {
-      name: "better-giving",
+      name: "offeria",
       removal: "retain",
       protect: input?.stage === stage.prod,
       home: "aws",
-      providers: { cloudflare: "6.13.0" },
+      providers: {
+        cloudflare: "6.13.0",
+        aws: { profile: "apes" },
+      },
     };
   },
   async run() {

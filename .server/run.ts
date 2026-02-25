@@ -29,7 +29,7 @@ export default function (s: TStage): Record<string, any> {
   links.push(scrts.per_stage);
   links.push(scrts.shared);
 
-  const eml = email_fn(s);
+  const eml = email_fn();
   links.push(eml);
 
   const table_users = table_fns.users(s, links);
