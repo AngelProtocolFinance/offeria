@@ -67,20 +67,6 @@ function create_user_pool(i: IInput, config: (typeof stage_config)["default"]) {
     },
   });
 
-  new aws.iam.RolePolicy("usrpl-post-confirm-policy", {
-    role: post_confirm.nodes.role.name,
-    policy: $jsonStringify({
-      Version: "2012-10-17",
-      Statement: [
-        {
-          Effect: "Allow",
-          Action: ["cognito-idp:AdminUpdateUserAttributes"],
-          Resource: s.arn,
-        },
-      ],
-    }),
-  });
-
   const google_provider = s.addIdentityProvider(keys.identity_provider_google, {
     type: "google",
     details: {
