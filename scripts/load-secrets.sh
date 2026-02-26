@@ -25,9 +25,5 @@ echo "Loading env-shared as SECRETS_SHARED fallback..."
 printf 'SECRETS_SHARED=%s\n' "$(to_json "$ENV_DIR/env-shared.ts" env_shared)" > "$TMP_DIR/shared.env"
 sst secret load "$TMP_DIR/shared.env" --fallback
 
-# 3. env-production → SECRETS --stage production
-echo "Loading env-production as SECRETS for production..."
-printf 'SECRETS=%s\n' "$(to_json "$ENV_DIR/env-production.ts" env_production)" > "$TMP_DIR/production.env"
-sst secret load "$TMP_DIR/production.env" --stage production
 
 echo "All secrets loaded successfully"
