@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import type { ReactNode } from "react";
 import { NavLink, href } from "react-router";
-import bg_logo from "#/assets/images/bg-logo.webp";
+import bg_logo from "#/assets/images/hallow-logo.png";
 import type { PublicUser } from "#/types/auth";
 import { UserAvatar } from "../user-avatar";
 import { UserMenu } from "../user-menu";
@@ -153,8 +153,8 @@ export function NavDropdown({ user, auth_links, classes = "" }: Props) {
               <NavLink to={href("/about-us")} className={styler}>
                 <img
                   src={bg_logo}
-                  width={15}
-                  height={15}
+                  width={20}
+                  height={20}
                   className="shrink-0 group-hover:-rotate-12 transition-transform group-hover:stroke-blue"
                 />
                 <span>Our Mission</span>

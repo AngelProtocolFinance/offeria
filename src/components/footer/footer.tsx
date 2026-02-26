@@ -1,5 +1,5 @@
 import { Link, href } from "react-router";
-import dappLogo from "#/assets/images/offeria-logo-text-501c3.png";
+import dappLogo from "#/assets/images/hallow-logo.png";
 import { ExtLink } from "#/components/ext-link";
 import { INTERCOM_HELP } from "#/constants/env";
 import { guidestar } from "#/constants/urls";
@@ -13,11 +13,10 @@ export function Footer({ classes = "" }: Props) {
     <footer
       className={`grid ${classes} grid-cols-[1fr_auto_1fr] max-2xl:gap-x-0 2xl:grid-cols-[auto_auto_1fr] items-center p-10 gap-10`}
     >
-      <div className="flex items-center gap-x-2 shrink-0 max-2xl:col-start-2">
+      <div className="flex items-center gap-x-4 shrink-0 max-2xl:col-start-2">
         <img
           src={dappLogo}
-          height={40}
-          width={170}
+          width={90}
           className="object-contain my-4"
           alt="logo"
         />
