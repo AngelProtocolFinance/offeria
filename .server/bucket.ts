@@ -6,8 +6,5 @@ export const bucket = (stage: TStage): sst.aws.Bucket => {
       access: "public",
     });
   }
-  return sst.aws.Bucket.get(
-    key,
-    "better-giving-production-bucketbucket-banhobwe"
-  );
+  return sst.aws.Bucket.get(key, "offeria-production-bucketbucket-fwesdaer");
 };

@@ -9,7 +9,7 @@ export const donations_settled = (
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tbldonssettledTable-twawzebb"
+      "offeria-production-tbldonssettledTable-ouuhuhwb"
     );
   }
   const d = new sst.aws.Dynamo(key, {

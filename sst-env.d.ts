@@ -14,62 +14,14 @@ declare module "sst" {
       "type": "sst.sst.Secret"
       "value": string
     }
-    "api-webhooks": {
-      "type": "sst.aws.ApiGatewayV2"
-      "url": string
-    }
-    "api-wh-rh-alchemy": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "api-wh-rh-anvil": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "api-wh-rh-chariot": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "api-wh-rh-nowpayments": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "api-wh-rh-paypal": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "api-wh-rh-stripe": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
     "bucket": {
       "name": string
       "type": "sst.aws.Bucket"
-    }
-    "crn-nav-update-init-fn": {
-      "name": string
-      "type": "sst.aws.Function"
     }
     "email": {
       "configSet": string
       "sender": string
       "type": "sst.aws.Email"
-    }
-    "q-don-settlement": {
-      "type": "sst.aws.Queue"
-      "url": string
-    }
-    "q-don-settlement-dlq": {
-      "type": "sst.aws.Queue"
-      "url": string
-    }
-    "q-don-success": {
-      "type": "sst.aws.Queue"
-      "url": string
-    }
-    "q-don-success-dlq": {
-      "type": "sst.aws.Queue"
-      "url": string
     }
     "tbl-api-keys": {
       "name": string
@@ -162,23 +114,6 @@ declare module "sst" {
     "usrpl": {
       "id": string
       "type": "sst.aws.CognitoUserPool"
-    }
-    "usrpl-client": {
-      "id": string
-      "secret": string
-      "type": "sst.aws.CognitoUserPoolClient"
-    }
-    "usrpl-custom-msg-hndlr": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "usrpl-post-confirm-hndlr": {
-      "name": string
-      "type": "sst.aws.Function"
-    }
-    "usrpl-pre-token-gen-hndlr": {
-      "name": string
-      "type": "sst.aws.Function"
     }
     "website": {
       "type": "sst.aws.React"

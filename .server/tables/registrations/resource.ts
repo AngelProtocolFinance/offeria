@@ -9,7 +9,7 @@ export const registrations = (
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblregistrationsTable-uzwsneue"
+      "offeria-production-tblregistrationsTable-efaeabvh"
     );
   }
   const d = new sst.aws.Dynamo(key, {

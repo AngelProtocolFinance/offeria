@@ -27,7 +27,7 @@ export const payouts_v2 = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblpayoutsv2Table-ramskoxm"
+      "offeria-production-tblpayoutsv2Table-bmddkszt"
     );
   }
   return new sst.aws.Dynamo(key, config);

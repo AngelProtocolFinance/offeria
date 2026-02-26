@@ -7,7 +7,7 @@ export const donation_success = (stage: TStage, link: $util.Input<any[]>) => {
   if (is_dev(stage)) {
     return sst.aws.Queue.get(
       key,
-      "https://sqs.us-east-1.amazonaws.com/571372027840/better-giving-default-qdonsuccessQueue-rbtaesfh.fifo"
+      "https://sqs.us-east-1.amazonaws.com/186466507516/offeria-production-qdonsuccessQueue-owhuhtwk.fifo"
     );
   }
 

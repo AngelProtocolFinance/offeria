@@ -147,5 +147,5 @@ export const user_pool = (i: IInput) => {
   }
 
   // dev stages reference default pool
-  return sst.aws.CognitoUserPool.get(keys.user_pool, "us-east-1_6igeurHnN");
+  return sst.aws.CognitoUserPool.get(keys.user_pool, "us-east-1_XC8gYbyhd");
 };

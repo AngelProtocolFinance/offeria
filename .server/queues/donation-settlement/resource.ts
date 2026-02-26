@@ -10,7 +10,7 @@ export const donation_settlement = (
   if (is_dev(stage)) {
     return sst.aws.Queue.get(
       key,
-      "https://sqs.us-east-1.amazonaws.com/571372027840/better-giving-default-qdonsettlementQueue-ohtessoe.fifo"
+      "https://sqs.us-east-1.amazonaws.com/186466507516/offeria-production-qdonsettlementQueue-sbtdbovr.fifo"
     );
   }
 

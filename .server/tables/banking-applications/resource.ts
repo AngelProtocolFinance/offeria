@@ -9,7 +9,7 @@ export const banking_applications = (
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblbankingappsTable-okzvvhek"
+      "offeria-production-tblbankingappsTable-umwuzzus"
     );
   }
   const d = new sst.aws.Dynamo(key, {

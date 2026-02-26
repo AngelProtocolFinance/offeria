@@ -27,7 +27,7 @@ export const nav_history = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblnavhistoryTable-bzecowcb"
+      "offeria-production-tblnavhistoryTable-xaecmaos"
     );
   }
   return new sst.aws.Dynamo(key, config);

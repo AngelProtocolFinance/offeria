@@ -3,10 +3,7 @@ import { is_dev } from "../../helpers";
 const key = "tbl-dons";
 export const donations = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
-    return sst.aws.Dynamo.get(
-      key,
-      "better-giving-default-tbldonsTable-rnvsnbtv"
-    );
+    return sst.aws.Dynamo.get(key, "offeria-production-tbldonsTable-xotmxrnv");
   }
   return new sst.aws.Dynamo(key, {
     fields: {

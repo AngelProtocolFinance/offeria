@@ -7,10 +7,7 @@ export const funds = (
   link: $util.Input<any[]>
 ): sst.aws.Dynamo => {
   if (is_dev(stage)) {
-    return sst.aws.Dynamo.get(
-      key,
-      "better-giving-default-tblfundsTable-cnkmwxka"
-    );
+    return sst.aws.Dynamo.get(key, "offeria-production-tblfundsTable-mkuvbrfe");
   }
   const d = new sst.aws.Dynamo(key, {
     fields: {

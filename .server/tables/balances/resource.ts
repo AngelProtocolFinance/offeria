@@ -5,7 +5,7 @@ export const balances = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblbalancesTable-bvcnwmko"
+      "offeria-production-tblbalancesTable-hrohtwvo"
     );
   }
   return new sst.aws.Dynamo(key, {

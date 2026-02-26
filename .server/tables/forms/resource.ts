@@ -19,10 +19,7 @@ const config: sst.aws.DynamoArgs = {
 const key = "tbl-forms";
 export const forms = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
-    return sst.aws.Dynamo.get(
-      key,
-      "better-giving-default-tblformsTable-bcseworw"
-    );
+    return sst.aws.Dynamo.get(key, "offeria-production-tblformsTable-bkmrxwnb");
   }
   return new sst.aws.Dynamo(key, config);
 };

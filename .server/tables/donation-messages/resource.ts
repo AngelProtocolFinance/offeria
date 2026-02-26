@@ -5,7 +5,7 @@ export const donation_messages = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tbldonmsgsTable-uhauwtun"
+      "offeria-production-tbldonmsgsTable-bbxewzoo"
     );
   }
   return new sst.aws.Dynamo(key, {

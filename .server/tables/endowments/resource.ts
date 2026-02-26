@@ -9,7 +9,7 @@ export const endowments = (
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblendowmentsTable-zhtrhtkv"
+      "offeria-production-tblendowmentsTable-etebnvbc"
     );
   }
   const d = new sst.aws.Dynamo(key, {

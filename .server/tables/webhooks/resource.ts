@@ -5,7 +5,7 @@ export const webhooks = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblwebhooksTable-uohcuuef"
+      "offeria-production-tblwebhooksTable-onmsfehm"
     );
   }
   return new sst.aws.Dynamo(key, {

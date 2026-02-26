@@ -6,10 +6,7 @@ export const subscriptions = (
   link: $util.Input<any[]>
 ): sst.aws.Dynamo => {
   if (is_dev(stage)) {
-    return sst.aws.Dynamo.get(
-      key,
-      "better-giving-default-tblsubsTable-nzzktocc"
-    );
+    return sst.aws.Dynamo.get(key, "offeria-production-tblsubsTable-szscdtun");
   }
 
   const d = new sst.aws.Dynamo(key, {

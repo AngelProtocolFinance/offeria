@@ -13,7 +13,7 @@ export const users_meta = (stage: TStage): sst.aws.Dynamo => {
   if (is_dev(stage)) {
     return sst.aws.Dynamo.get(
       key,
-      "better-giving-default-tblusersmetaTable-rxmhxnxc"
+      "offeria-production-tblusersmetaTable-fbdwnssr"
     );
   }
   return new sst.aws.Dynamo(key, config);
