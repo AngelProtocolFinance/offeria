@@ -1,8 +1,6 @@
+import type { IUserDb } from "@/user";
 import type { PostConfirmationTriggerHandler } from "aws-lambda";
-import { Resource } from "sst";
-import { nvs } from "../env";
-
-const userdb = new UserDb(Resource["tbl-users"].name, nvs.app.env);
+import { userdb } from "../tables/users";
 
 export const handler: PostConfirmationTriggerHandler = async (event) => {
   try {
