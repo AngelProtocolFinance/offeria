@@ -8,7 +8,7 @@ import tsconfig_paths from "vite-tsconfig-paths";
 export default defineConfig({
   logLevel: "warn",
   build: { outDir: "build", target: "es2022" },
-  server: { port: 4200, allowedHosts: [".ngrok-free.app"] },
+  server: { port: 4200, strictPort: true, allowedHosts: [".ngrok-free.app"] },
   plugins: [
     !process.env.VITEST && reactRouter(),
     tsconfig_paths(),
